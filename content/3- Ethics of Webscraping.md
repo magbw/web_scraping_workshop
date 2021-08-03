@@ -6,10 +6,18 @@ description: >
     This section covers the ethical and regulatory guidelins for webscraping for research.   
 ---
 
-## Content Pages
+## Getting started  
 
-Content pages are written in markdown and can be enhanced using Liquid includes that are packaged with the template.
-Start by editing the examples or creating new files in the "content" folder.
+Scraping the web for data is
+
+excellent for publically available content - 
+probelmatic where there are people involved - privacy issues - 
+not so cool to try and scrape data from behind a paywall and so on
+
+examples of webscraping gone bad - 
+
+
+
 
 [Markdown](https://daringfireball.net/projects/markdown/) is a standard to [simplify writing](https://evanwill.github.io/_drafts/notes/writing-markdown.html) content for the web. 
 [GitHub markdown flavor](https://help.github.com/articles/basic-writing-and-formatting-syntax/) can be used any where on GitHub and in Jekyll.
@@ -26,14 +34,26 @@ Use these options:
 - `youtubeid:` will add an YouTube video embed (optional). Find the id in the YouTube link. For example, in `https://youtu.be/moJgWrD6dwg` or `https://www.youtube.com/watch?v=moJgWrD6dwg` the youtubeid is `moJgWrD6dwg`.
 - Alternatively, if you don't want `title` or other options to appear on the page, you can over ride the layout by adding `layout: default` 
 
-## Components Includes
+## Ethical consderations
+
+Befor scraping-
+is the data feely publically available
+
+what are the permissions as set by the page owners (robots.txt)
+
+are there people involved?  could their identity or privacy be compromised?
+
+API?
+written permissions
+
+
 
 `workshop-template-b` contains a series of [Liquid "includes"](https://jekyllrb.com/docs/includes/) to add basic [Bootstrap components](https://getbootstrap.com/docs/4.1/components/) to your Markdown content.
 Examples below demonstrate the includes.
 
 --------
 
-#### Figures 
+## good practice/bad practice
 
 `{% raw %}{% include figure.html img="uidaho-workshop.jpg" alt="workshop scene" caption="Library workshops!" width="75%" %}{% endraw %}`
 
