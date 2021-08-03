@@ -10,15 +10,15 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: workshop-template-b
+title: Web Scraping with Python
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Font Awesome 5 free, https://fontawesome.com/icons?d=gallery&m=free
 # some options: fas fa-wrench; fas fa-cogs; fas fa-code; fas fa-chalkboard-teacher; fas fa-book-open
 title-icon: fas fa-code
 # description, keywords, and image for meta tags
-description: "Create a workshop website quick and easy!"
-keywords: "workshops, websites, gh-pages, jekyll"
-featured-image: "/images/uidaho-workshop.jpg"
+description: "Learn how to web scrape using python"
+keywords: "web scraping, python"
+featured-image: "/images/external-content.duckduckgo.com.jpg"
 # add search box to footer? true/false
 search: true
 
