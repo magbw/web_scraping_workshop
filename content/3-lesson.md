@@ -1,5 +1,5 @@
 ---
-title: Ethics of Webscrapis
+title: Ethics of Webscraping
 nav: Content
 topics: ethical considerations, permissions, scraping potentially sensitive data
 description: >
