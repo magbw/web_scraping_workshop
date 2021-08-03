@@ -1,10 +1,9 @@
 ---
-title: Create Lesson Content
+title: Ethics of Webscrapis
 nav: Content
-topics: Markdown; Includes
+topics: ethical considerations, permissions, scraping potentially sensitive data
 description: >
-    This section has example Bootstrap feature includes that can be used to add some interest to your lesson content. Directly below this is an example video embed!
-youtubeid: moJgWrD6dwg
+    This section covers the ethical and regulatory guidelins for webscraping for research.   
 ---
 
 ## Content Pages
