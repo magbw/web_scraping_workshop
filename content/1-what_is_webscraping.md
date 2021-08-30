@@ -10,3 +10,5 @@ It is a form of copying in which specific data is gathered and copied from the w
 <https://en.wikipedia.org/wiki/Web_scraping>
 
 
+A web scraping software will automatically load, crawl and extract data from multiple pages of websites based on your requirement. It is either custom built for a specific website or one which can be configured to work with any website (https://www.webharvy.com/articles/what-is-web-scraping.html)  
+
