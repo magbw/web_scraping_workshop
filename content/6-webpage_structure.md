@@ -1,9 +1,9 @@
 ---
 title: Understanding webpage structure for webscraping 
-nav: Content
-topics: Markdown; Includes
+nav: Webpage Structure
+topics: Webpage structure; tags
 description: >
-    Introduction to webpage architecture and how we use it to programatically scrape its contents.
+    Introduction to webpage structure and how we use it to programatically scrape its contents.
 ---
 
 ## Webpage structure 
@@ -36,13 +36,13 @@ When programatically scraping a webpage, you need a unique way to telling the pr
 
 Tags are html elements used to define the structure of a webpage.
 
-** ```<head></head>``` this is where css and javascript is placed, can also reference script stored in another loction
-** ```<body></body>``` This is the content that we see on the webpage
-** ```<h1></h1>``` thru to ```<h6></h6>``` are headings
-** ```<a></a>``` defines a hyperlink. Usually a URL to a different webpage. 
-** ```<p></p>``` indicates a paragraph
-** ```<div></div>``` is a division, think of it as an individual section of content
-** ```<table></table>``` defines a table, and ```<tr></tr>``` defines table rows
+** ```<head></head>``` this is where css and javascript is placed, can also reference script stored in another loction <br>
+** ```<body></body>``` This is the content that we see on the webpage <br>
+** ```<h1></h1>``` thru to ```<h6></h6>``` are headings <br>
+** ```<a></a>``` defines a hyperlink. Usually a URL to a different webpage <br>
+** ```<p></p>``` indicates a paragraph <br>
+** ```<div></div>``` is a division, think of it as an individual section of content <br>
+** ```<table></table>``` defines a table, and ```<tr></tr>``` defines table rows <br>
 
 Attributes can be added within tags, and again are useful for scraping specific information.
 For example, the following a tag contains a href attribute, and it contains the text "The XYZ website". Both can be used for scraping.
@@ -55,6 +55,7 @@ The following ```<h2>``` tag can be scraped using the 'style="color:green"', the
 
 ```html
 <h2 style="color:green" id="py_scrape">Scraping with python</h2>
+```
 
 
 The following code will generate a very simple webpage. Copy it, save it as webpage.html, then open is with your webbrowser.
@@ -87,15 +88,22 @@ The following code will generate a very simple webpage. Copy it, save it as webp
         </div> 
     <h2>secondary title<h2>
         <div id="Lorem ipsum">
-            Lorem ipsum dolor sit amet, causae placerat consequat cu vis, id consequat interesset intellegebat eos. Vix in falli abhorreant assueverit, solet everti aliquid id quo. Mel consetetur intellegebat at, sumo veniam diceret vis et, eam id quaeque feugiat. Ut cum ferri menandri, noluisse indoctum qui ei.
+            Lorem ipsum dolor sit amet, causae placerat consequat cu vis, id consequat interesset intellegebat eos. 
+            Vix in falli abhorreant assueverit, solet everti aliquid id quo. 
+            Mel consetetur intellegebat at, sumo veniam diceret vis et, eam id quaeque feugiat. 
+            Ut cum ferri menandri, noluisse indoctum qui ei.
         </div>
     <h2 id="t3">Third title</h2>
         <div>
             <p>
-                Vix ei choro latine evertitur, quo iuvaret assueverit dissentias no. Has te nullam nemore, paulo nullam in usu, vel apeirian corrumpit cu. Ne natum mazim soluta per, ad mel vitae
+                Vix ei choro latine evertitur, quo iuvaret assueverit dissentias no. 
+                Has te nullam nemore, paulo nullam in usu, vel apeirian corrumpit cu. 
+                Ne natum mazim soluta per, ad mel vitae.
             </p>
             <p>
-                Menandri delicata cu eos, essent graecis vivendo pro te. Eu ius quot integre erroribus. Mei ex postea epicurei adolescens, at rebum dolore vivendo nam. Graecis adipisci sapientem cum ne, ad facilis tibique percipit vim, blandit dissentias duo ne.
+                Menandri delicata cu eos, essent graecis vivendo pro te. Eu ius quot integre erroribus. 
+                Mei ex postea epicurei adolescens, at rebum dolore vivendo nam. 
+                Graecis adipisci sapientem cum ne, ad facilis tibique percipit vim, blandit dissentias duo ne.
             </p>
         </div>    
 </body>
@@ -104,9 +112,9 @@ The following code will generate a very simple webpage. Copy it, save it as webp
 
 
 ## Challenge
-Using the above code. What tags/attributes can we use to scrape the following text:
+Using the above code. What tags/attributes can we use to scrape all the text from the paragraph that starts with:
 
-    Lorem ipsum dolor sit amet, causae placerat consequat cu vis, id consequat interesset intellegebat eos. Vix in falli abhorreant assueverit, solet everti aliquid id quo. Mel consetetur intellegebat at, sumo veniam diceret vis et, eam id quaeque feugiat. Ut cum ferri menandri, noluisse indoctum qui ei.
+    Lorem ipsum dolor sit amet, causae placerat consequat cu vis
 
 Try to find something unique, so that you don't end up with information that you don't want
 
