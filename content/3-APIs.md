@@ -16,3 +16,4 @@ While you can just type an API request into the location box of your web browser
 
 be aware that not all pages grant reserachers API access
 
+https://monashdatafluency.github.io/python-web-scraping/section-3-API-based-scraping/
