@@ -23,13 +23,13 @@ featured-image: "/images/external-content.duckduckgo.com.jpg"
 search: true
 
 # author settings for cc-by, appears in the footer and credits
-author: evan will
+author: Brett Parker & Ben McRae
 # your github username for link [optional]
-github_username: evanwill
+github_username: BrettParker benmcrae1976
 # year or date published
-pub_year: 2020
+pub_year: 2021
 # location of code, the full url to your github repository
-source-code: https://github.com/evanwill/workshop-template-b
+source-code: https://github.com/gu-eresearch/web_scraping_workshop
 
 ##########
 # URL VARIABLES [optional!]

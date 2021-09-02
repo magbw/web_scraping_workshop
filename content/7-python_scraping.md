@@ -8,8 +8,10 @@ description: >
 ---
 
 ## Python for webscraping
-
-Beautiful soup is used for extracting and parsing (breaking down) webpage content;  selenium is used to navigate  webpages and input data into text fields; scrapy is a framework for webscraping, look into it once you become comfortable with coding.
+Python is well suited for programatically scraping data from websites. There are three major packages used to webscraping in python.
+**Beautifulsoup** is used for extracting and parsing (breaking down) webpage content <br> 
+**selenium** is used to navigate webpages and input data into text fields <br>
+**scrapy** is a framework for webscraping, look into it once you become comfortable with coding. We will not work with scrapy in the workshop, however, <a href='https://librarycarpentry.org/lc-webscraping/04-scrapy/index.html' target='_blank'>this </a> workshop offers a nice overview.
 
 ## Beautiful Soup
 
@@ -23,25 +25,32 @@ import requests
 from bs4 import BeautifulSoup
 import selenium
 
-quotes_url = 'https://www.quotes.toscrape.com' 
+quotes_url = 'https://quotes.toscrape.com/' 
 html_text = requests.get(quotes_url).text 
 quotes_soup = BeautifulSoup(html_text, 'html.parser')
-```
 
-# quotes_url = 'https://www.wikipedia.org/'
+print(quotes_soup)
+```
 
 First we created a variable called quotes_url, this is the url or webpage that you want to scrape. 
 Then we pass it to the requests function get, which gets a response from the webpage and returns all the html text back as a single chunk. You can see the output of this by running "print(html_text)" in your python console.
-Now we can use beautiful soup to parse this into something that is readable, in this case html content. Run "print(quotes_soup)". This is now the same html as is visible when we use a browser to inspect the webpage. You can copy this text, save it as .html and then open it using your web browser.
+Now we can use beautiful soup to parse this into something that is readable, in this case html content. Run "print(quotes_soup)". This is now the same html as is visible when we use a browser to inspect the webpage. You can copy this text, save it as .html and then open it using your web browser. It will only contain the text, the links will not work. This is because we have only scraped the data from the main page, we have not scraped any of the data from the links. Also, it will not look pretty, again, this is because we have not collected the website code that dictates its style.
 
-Now that we have scraped all the text from the website, we should collect the specific information that we are after.
+Now that we have scraped all the text from the main page of quotes to scrape, we should collect the specific information that we are after.
 
-Collecting specific information can be easy if there are html tags for it. For example, we can pull out the title with the following tag
+Collecting specific information can be easy if there are html tags for it. For example, we can extract quotes using their tag.
 
-```html
+
+```python
+quotes_soup.body.span.text
 
 ```
+for i in 1:len(quotes_soup.find_all("div", attrs = {"class":"quote"})):
+    
 
+```python
+quotes_soup.find('small', attrs = {'class':'author'}).text
+```
 
 ## Challenge
 Use your web browser to inspect the quotes to scrape webpage 'https://www.quotes.toscrape.com' and figure out how you can get the authors names of the quotes.
