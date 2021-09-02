@@ -23,9 +23,11 @@ featured-image: "/images/external-content.duckduckgo.com.jpg"
 search: true
 
 # author settings for cc-by, appears in the footer and credits
-author: Brett Parker & Ben McRae
+author: Brett Parker
+author1: Ben McRae
 # your github username for link [optional]
-github_username: BrettParker benmcrae1976
+github_username: BrettParker
+github_username1: benmcrae1976
 # year or date published
 pub_year: 2021
 # location of code, the full url to your github repository
