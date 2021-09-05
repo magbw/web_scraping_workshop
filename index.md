@@ -13,7 +13,7 @@ layout: default
 
 {% include toc.html %}
 
-Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
+Hosted by [eResearch, Griffith University](https://www.griffith.edu.au/eresearch-services).
 
 ------
 
