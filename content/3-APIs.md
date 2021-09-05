@@ -12,7 +12,7 @@ An API essentially gives permission for a reseracher to use a webpages content.
 
 
 
-Web APIs are generally used find and deliver data. While researchers can easily interpret information on a web page, we need to tell the computer what data to look for. APIs provide data in a form that computers can understand and use (we call this machine-readable data).
+Web APIs are generally used find and deliver data. While researchers can easily interpret information on a web page, we need to tell the computer which data points to look for. APIs provide data in a form that computers can understand and use (we call this machine-readable data).
 
 While you can just type an API request into the location box of your web browser, most of the time requests and responses will be handled by a computer script or program. APIs don't care what programming language you use as long as you structure requests in the way they expect. (https://glam-workbench.net/trove/)
 
