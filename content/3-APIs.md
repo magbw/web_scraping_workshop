@@ -1,10 +1,13 @@
 ---
 title: API's
-
+nav: API's
+topics: What are API's; Why use API's; Do to access API's
+description: >
+      Many websites offer API's for retrieving their content. If a website has an API, use it.
 ---
 1.	What are they
 2.	Why use them
-3.	How do you get them
+3.	How do you access them
 
 What is an API? (Application Programming Interface)
 API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. 
