@@ -1,6 +1,6 @@
 ---
 title: Ethics of Webscraping
-nav: Content
+nav: Webscraping ethics
 topics: ethical considerations, permissions, scraping potentially sensitive data
 description: >
     This section covers the ethical and regulatory guidelins for webscraping for research.   
