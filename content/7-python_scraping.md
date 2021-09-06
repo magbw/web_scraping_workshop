@@ -40,26 +40,53 @@ Now that we have scraped all the text from the main page of quotes to scrape, we
 
 Collecting specific information can be easy if there are html tags for it. For example, we can extract quotes using their tag.
 
+Lets inspect a quote using our browser. The following image shows that the quotes sit within the body, then under the span tag.
+![quotes tag](../images/quotesTag.png)
+
+We can use the tag and class to access quotes. This will get the first quote.
+
 
 ```python
-quotes_soup.body.span.text
+quote = quotes_soup.find_all('span', class_='text')
 
+print(quote)
 ```
-for i in 1:len(quotes_soup.find_all("div", attrs = {"class":"quote"})):
-    
+This has returned us a list with all the quotes on the first page. We still have some html code that we are probably not interested in. 
+We can access the text of an individual quote using the .text command. We will subset our quote list to the first element and return the text.
 
 ```python
-quotes_soup.find('small', attrs = {'class':'author'}).text
+print(quote[0].text)
 ```
+Lets remove the html for all the quotes. We will use a loop to go through the list. We will add the quote text to a new list called quotes.
+
+
+```python
+quotes = []
+for i in range(0,len(quote)):
+    quotes.append(quote[i].text)
+
+print(quotes)
+```
+  
+That looks good.
 
 ## Challenge
-Use your web browser to inspect the quotes to scrape webpage 'https://www.quotes.toscrape.com' and figure out how you can get the authors names of the quotes.
+Use your web browser to inspect the authors and figure out how you can get their names.
 There is multiple ways this can be achieved.
 
 <details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h2>Solution</h2></summary>
 <p>
 
+Lets you our web browser to inspect author.
+
+![author tag](../images/authorTag.png)
+
 ```python
+author = quotes_soup.find_all('small', class_='author')
+
+authors = []
+for i in range(0,len(author)):
+    authors.append(author[i].text)
 
 ```
 
