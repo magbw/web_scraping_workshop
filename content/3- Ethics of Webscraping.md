@@ -44,16 +44,18 @@ examples of webscraping gone bad -
 
 ## good practice/bad practice
 
-THE API WAY IS OFTEN THE BEST WAY
+WHERE YOU CAN USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
 
 RESPECT THE ROBOTS.TXT
-Also known as Robots Exclusion Standard, the robots.txt file is what indicates the web-crawling software where it is allowed (or not allowed) within the website. This is part of the Robots Exclusion Protocol (REP) which are a group of web standards created as a way to regulate how robots crawl the web.
+before you scrape a page make sure you check what is allowed using /robots.txt. This will tell you what is or is not allowed to be scraped from their pages.  
+ This is part of the Robots Exclusion Protocol (REP) which are a group of web standards created as a way to regulate how robots crawl the web.
 
 READ THE TERMS AND CONDITIONS
-This is the main way the website owner tells you the rules. Yes, it’s easier to just click “I agree” or “I accept” and hope for the best. Remember they wrote those for a reason. They are talking to you, listen to what they have to say.
+yes, actually read them.  this will tell you what the page allows and the rules for page use.  The terms and conditions are there for a reason, see what they say and abide. 
 
 BE GENTLE
+when you scrape a page you are essentailly attacking the servicer 
 The process of scraping can be pretty harsh on the server, and aggressive scraping can sometimes lead to functionality issues, generating a bad user experience for human users. So, make a habit to do the scraping off-peak hours. And don’t forget to space out the requests so the website’s owner won’t confuse your scraping for a DDoS attack.
 
 IDENTIFY YOURSELF
