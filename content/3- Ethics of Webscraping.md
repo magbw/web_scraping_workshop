@@ -44,25 +44,23 @@ examples of webscraping gone bad -
 
 ## good practice/bad practice
 
-WHERE YOU CAN USE THE API
+WHERE YOU CAN, USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
 
-RESPECT THE ROBOTS.TXT
+ROBOTS.TXT 
 before you scrape a page make sure you check what is allowed using /robots.txt. This will tell you what is or is not allowed to be scraped from their pages.  
  This is part of the Robots Exclusion Protocol (REP) which are a group of web standards created as a way to regulate how robots crawl the web.
 
 READ THE TERMS AND CONDITIONS
 yes, actually read them.  this will tell you what the page allows and the rules for page use.  The terms and conditions are there for a reason, see what they say and abide. 
 
-BE GENTLE
-when you scrape a page you are essentailly attacking the servicer 
-The process of scraping can be pretty harsh on the server, and aggressive scraping can sometimes lead to functionality issues, generating a bad user experience for human users. So, make a habit to do the scraping off-peak hours. And don’t forget to space out the requests so the website’s owner won’t confuse your scraping for a DDoS attack.
+Consider others
+when you scrape a page you are essentailly attacking the server, this can lead to the page going down, causing poor user experiences and generating bad press for the owners. 
+if you scrape, scrape in off peak times, and space out the requests, we go into this aspect of scraping though the tutorial.  you dont want your research to be confused with a DDos attack! 
 
-IDENTIFY YOURSELF
-The website’s administrator may notice some unusual traffic happening. Manners come first, so let them know who you are, your intentions, and how to contact you for more questions. You can do this by simply adding a User-Agent string with your information, so they will be able to see it. Is that simple.
+IDENTIFY YOURSELF and Ask first 
+if you are going to scrape a page let the page adminstrators know you are going to do it, this does not necessarily mean telling them directly but to add a a User-Agent string with your details to the code. That way the page will know who is accessing the data. Contacting  the page directly to ask would not hurt either. Be courteous, its free. Remember you are scraping for data that does not belong to you, was not colleccted by you and may have taken years to gather. 
 
-ASK FOR PERMISSION
-Some basic human courtesy is always appreciated. They have something that you want, be courteous and ask before assuming the information is free for you to take. Remember: the data doesn’t belong to you.
 
 
 ### references
