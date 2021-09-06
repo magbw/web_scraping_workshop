@@ -72,7 +72,6 @@ That looks good.
 
 ## Challenge
 Use your web browser to inspect the authors and figure out how you can get their names.
-There is multiple ways this can be achieved.
 
 <details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h2>Solution</h2></summary>
 <p>
@@ -94,7 +93,15 @@ for i in range(0,len(author)):
 </details>
 
 ## Selenium
-
+Now the have the quotes and authors for the first page, but there are more pages. We need selenium so that we can select the next page button
 
 Now we can use beautiful soup to extract the author names. This code will do it on the first page then stop. This is one scenario where selnium come to the rescue. We can use selenium to click on the next page button.
+
+
+
+```python
+
+import selenium
+
+```
 
