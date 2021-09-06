@@ -8,27 +8,34 @@ description: >
 
 ## Getting started  
 
-Scraping the web for data is
+Webscraping is using code, an API or web based add on to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
 
-excellent for publically available content - 
-probelmatic where there are people involved - privacy issues - 
-not so cool to try and scrape data from behind a paywall and so on
+As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
+
+
+## Ethical consderations
+
+Before scraping-
+find out if the data is freely publically available
+are wanting to scrape social media pages or a forum? 
+
+find the permissions as set by the page owners, you can find this using the /robots.txt add on. 
+
+for the data you wish to find; are there people, living or dead, involved?  could their identity or privacy be compromised? is the page you wish to scrape paywalled?  is the group private or public? 
+
+
+API?
+written permissions
+
+Web Scraping for data is  
+- excellent for publically available content - 
+- probelmatic where there are people involved - as there are both privacy issues and ethical concerns with this. 
+- not so cool to try and scrape data from behind a paywall and so on
 
 examples of webscraping gone bad - 
 
 
 
-## Ethical consderations
-
-Befor scraping-
-is the data feely publically available
-
-what are the permissions as set by the page owners (robots.txt)
-
-are there people involved?  could their identity or privacy be compromised?
-
-API?
-written permissions
 
 
 
