@@ -5,8 +5,8 @@ nav: Intro
 
 Web scraping the process of scraping webpages for data points and creating a dataset that is usable for analysis. 
 While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. 
-
-"Data displayed by websites can only be viewed using a web browser. Most websites do not allow you to save a copy of this data to a storage location or database. If you need the data, the only option is to manually copy and paste the data - a very tedious job which can take many hours or days to complete. Web Scraping is the technique of automating this process, so that instead of manually copying the data from websites, the Web Scraping software will perform the same task within a fraction of the time." (https://www.webharvy.com/articles/what-is-web-scraping.html)
+{% capture text %}
+"Data displayed by websites can only be viewed using a web browser. Most websites do not allow you to save a copy of this data to a storage location or database. If you need the data, the only option is to manually copy and paste the data - a very tedious job which can take many hours or days to complete. Web Scraping is the technique of automating this process, so that instead of manually copying the data from websites, the Web Scraping software will perform the same task within a fraction of the time." (https://www.webharvy.com/articles/what-is-web-scraping.html) {% endcapture %}
 
 
 
