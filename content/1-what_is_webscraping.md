@@ -13,8 +13,9 @@ While web scraping can be done manually by a software user, the term typically r
 to a storage location or database. If you need the data, the only option is to manually copy and paste the data
 - a very tedious job which can take many hours or days to complete. Web Scraping is the technique of automating this process,
 so that instead of manually copying the data from websites, the Web Scraping software will perform the same 
-task within a fraction of the time." (https://www.webharvy.com/articles/what-is-web-scraping.html){% endraw %}
-```
+task within a fraction of the time." (https://www.webharvy.com/articles/what-is-web-scraping.html)
+{% endraw %}```
+
 
 
 
