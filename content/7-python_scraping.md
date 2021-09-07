@@ -3,7 +3,7 @@ title: Programmatically scrape using python
 nav: Python
 topics: Python; Beautiful Soup; Selenium
 description: >
-    Why use python </br>
+    Why use python
     Useful python packages for webscraping 
 ---
 
@@ -41,7 +41,7 @@ Now that we have scraped all the text from the main page of quotes to scrape, we
 Collecting specific information can be easy if there are html tags for it. For example, we can extract quotes using their tag.
 
 Lets inspect a quote using our browser. The following image shows that the quotes sit within the body, then under the span tag.
-![quotes tag](../images/quotesTag.png)
+![quotes tag](../images/quotesTag.png) width="75%"
 
 We can use the tag and class to access quotes. This will get the first quote.
 
@@ -92,16 +92,59 @@ for i in range(0,len(author)):
 </p>
 </details>
 
+Now we need to scrape the quotes from all of the pages.
+First we need to figure out how to move to the next page, use your browser to inspect the next page button.
+
+![next page](../images/href.png)
+
+It contain a href tag. This is a hyperlink. We can you the hyperlinks to move through all the pages and scrape data on them all.
+First we need to create a list with the hyperlinks for all the pages.
+```python
+pages = []
+for i in range(0,20):
+    page = "https://quotes.toscrape.com" + '/page/' + str(i) + '/'
+    pages.append(page)
+
+quote_soup = []
+author_soup = []
+for i in range(0,len(pages)):
+    quotes_url = pages[i] 
+    html_text = requests.get(quotes_url).text 
+    quotes_soup = BeautifulSoup(html_text, 'html.parser')
+    quote = quotes_soup.find_all('span', class_='text')
+    author = quotes_soup.find_all('small', class_='author')
+    quote_soup = quote_soup + quote
+    author_soup = author_soup + author    
+
+authors = []
+quotes = []
+for i in range(0,len(author_soup)):    
+    authors.append(author_soup[i].text)
+    quotes.append(quote_soup[i].text)
+
+
+```
+
+    
+
 ## Selenium
 Now the have the quotes and authors for the first page, but there are more pages. We need selenium so that we can select the next page button
 
 Now we can use beautiful soup to extract the author names. This code will do it on the first page then stop. This is one scenario where selnium come to the rescue. We can use selenium to click on the next page button.
 
+To use selenium you will need a webdriver. You can get a webdriver for chrome, although it can be difficult to use. I would suggest using the <a href='https://github.com/mozilla/geckodriver/releases' target='_blank'>firefox webdriver</a>
 
+
+Lets import selenium and webdriver, and then set up a webbrowser.
+```python
+import selenium
+from selenium import webdriver
+
+driver = webdriver.Firefox()
+```
 
 ```python
-
-import selenium
+driver.find_element_by_class_name('next').click()
 
 ```
 
