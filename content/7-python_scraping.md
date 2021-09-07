@@ -41,7 +41,7 @@ Now that we have scraped all the text from the main page of quotes to scrape, we
 Collecting specific information can be easy if there are html tags for it. For example, we can extract quotes using their tag.
 
 Lets inspect a quote using our browser. The following image shows that the quotes sit within the body, then under the span tag.
-![quotes tag](../images/quotesTag.png) width="75%"
+{% include figure.html img="quotesTag.png" alt="quotes tag"  width="75%" %}
 
 We can use the tag and class to access quotes. This will get the first quote.
 
@@ -78,7 +78,7 @@ Use your web browser to inspect the authors and figure out how you can get their
 
 Lets you our web browser to inspect author.
 
-![author tag](../images/authorTag.png)
+{% include figure.html img="authorTag.png" alt="authors tag"  width="75%" %}
 
 ```python
 author = quotes_soup.find_all('small', class_='author')
@@ -95,7 +95,7 @@ for i in range(0,len(author)):
 Now we need to scrape the quotes from all of the pages.
 First we need to figure out how to move to the next page, use your browser to inspect the next page button.
 
-![next page](../images/href.png)
+{% include figure.html img="href.png" alt="next page"  width="75%" %}
 
 It contain a href tag. This is a hyperlink. We can you the hyperlinks to move through all the pages and scrape data on them all.
 First we need to create a list with the hyperlinks for all the pages.
