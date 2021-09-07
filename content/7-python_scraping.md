@@ -9,14 +9,13 @@ description: >
 
 ## Python for webscraping
 Python is well suited for programatically scraping data from websites. There are three major packages used to webscraping in python.
-**Beautifulsoup** is used for extracting and parsing (breaking down) webpage content <br> 
-**selenium** is used to navigate webpages and input data into text fields <br>
+**Beautifulsoup** is used for extracting and parsing (breaking down) webpage content from static pages <br> 
+**selenium** is used to navigate webpages, input data into text fields, take screenshots and interact with dymanic pages <br>
 **scrapy** is a framework for webscraping, look into it once you become comfortable with coding. We will not work with scrapy in the workshop, however, <a href='https://librarycarpentry.org/lc-webscraping/04-scrapy/index.html' target='_blank'>this </a> workshop offers a nice overview.
 
 ## Beautiful Soup
 
 Beautiful soup is useful for scraping all content of a website, this includes the html content.
-
 To get started we need to import requests, this package will return a http response from the page we are interested in scraping.
 We will also import BeautifulSoup from the bs4 package, and import selenium.
 
@@ -97,13 +96,19 @@ First we need to figure out how to move to the next page, use your browser to in
 
 {% include figure.html img="href.png" alt="next page"  width="75%" %}
 
-It contain a href tag. This is a hyperlink. We can you the hyperlinks to move through all the pages and scrape data on them all.
-First we need to create a list with the hyperlinks for all the pages.
+It contain a href tag. This is a url, although it does not include the base url: https://quotes.toscrape.com. We can use this url to move to the next page, then we can scrape data from it. If we start at 1 page, scrape data, move to page 2 scrape data, ect, until we finish at the last page then we will have scraped all pages.
+So...... how do we do this?
+
+First we need to create a list that contains the url's for all the pages. i.e. ["https://quotes.toscrape.com/page/1/","https://quotes.toscrape.com/page/2/","https://quotes.toscrape.com/page/3/"]
+Second, we can use the list of url's to loop through each page and collect its html content and add it to a list. i.e. ["html content page 1","html content page 2","html content page 3"]
+Finally we can extract the individual quotes and authors from the list of html content.
 ```python
-pages = []
+pages = [] 
 for i in range(0,20):
-    page = "https://quotes.toscrape.com" + '/page/' + str(i) + '/'
-    pages.append(page)
+    page = "https://quotes.toscrape.com" + '/page/' + str(i) + '/' # create a string of the url, with each loop the page number increases by one 
+    pages.append(page) # write each url to a string
+
+print(pages)
 
 quote_soup = []
 author_soup = []
@@ -114,28 +119,29 @@ for i in range(0,len(pages)):
     quote = quotes_soup.find_all('span', class_='text')
     author = quotes_soup.find_all('small', class_='author')
     quote_soup = quote_soup + quote
-    author_soup = author_soup + author    
+    author_soup = author_soup + author   
+
+print(author_soup) 
 
 authors = []
 quotes = []
-for i in range(0,len(author_soup)):    
+for i in range(1,len(author_soup)):    
     authors.append(author_soup[i].text)
     quotes.append(quote_soup[i].text)
 
-
+print(authors)
 ```
 
-    
+Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
 
 ## Selenium
-Now the have the quotes and authors for the first page, but there are more pages. We need selenium so that we can select the next page button
-
-Now we can use beautiful soup to extract the author names. This code will do it on the first page then stop. This is one scenario where selnium come to the rescue. We can use selenium to click on the next page button.
-
+Selenium is used to ineract with dynamic webpages.
 To use selenium you will need a webdriver. You can get a webdriver for chrome, although it can be difficult to use. I would suggest using the <a href='https://github.com/mozilla/geckodriver/releases' target='_blank'>firefox webdriver</a>
+If you need to use the Chrome webdriver, make sure it is the same version as chrome. Here is setup and download <a href='https://chromedriver.chromium.org/' target='_blank'>instructions.</a>
 
 
-Lets import selenium and webdriver, and then set up a webbrowser.
+Lets import selenium and webdriver to run the webpage in. We will also need to set up a webbrowser for selenium to run in.
+
 ```python
 import selenium
 from selenium import webdriver
@@ -143,8 +149,19 @@ from selenium import webdriver
 driver = webdriver.Firefox()
 ```
 
-```python
-driver.find_element_by_class_name('next').click()
+A new firefox window will open when we run the above. This window is used to interact with the webpage.
 
+```python
+quotes_url = 'https://quotes.toscrape.com/'
+
+driver.get(quotes_url)
 ```
 
+Now lets use some xpath to click the next button to more onto the next page
+
+```python
+
+driver.find_element_by_xpath('//span[text()="→"]').click()
+```
+We've used selenium to click the next page button. 
+ 
