@@ -32,6 +32,8 @@ Web Scraping for data is
 
 The legality of web scraping is still a grey area. Many webpages forbid scraping in their ToS, but this is not generally enforceable. Issues with data scraping generally occur where the scraped data is used for profit.  Researchers need to remain alert and be aware of restrictions on data scraping and know of the implications of scraping in legal cases.
 
+The following links provide information on cases where companies have sued webscrapers for accessing and using their data. 
+
 https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/
 
 https://jaxenter.com/data-scraping-cases-165385.html
@@ -42,8 +44,7 @@ https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data
 
 
 --------
-
-## good practice/bad practice
+## how to stay out of trouble when scraping
 
 WHERE YOU CAN, USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
