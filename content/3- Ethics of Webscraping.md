@@ -29,7 +29,8 @@ Web Scraping for data is
 - probelmatic where there are people involved - as there are both privacy issues and ethical concerns with this. 
 - not so cool to try and scrape data from behind a paywall or on private pages or from social media groups or forums
 
-examples of webscraping gone bad - 
+
+The legality of web scraping is still a grey area. Many webpages forbid scraping in their ToS, but this is not generally enforceable. Issues with data scraping generally occur where the scraped data is used for profit.  Researchers need to remain alert and be aware of restrictions on data scraping and know of the implications of scraping in legal cases.
 
 https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/
 
