@@ -19,6 +19,9 @@ Web APIs are generally used find and deliver data. While researchers can easily 
 
 While you can just type an API request into the location box of your web browser, most of the time requests and responses will be handled by a computer script or program. APIs don't care what programming language you use as long as you structure requests in the way they expect. (https://glam-workbench.net/trove/)
 
+twitter researcher API - https://developer.twitter.com/en/products/twitter-api/academic-research
+
+
 check here for lists of pages with API access
 https://apilist.fun/
 https://github.com/public-apis/public-apis
