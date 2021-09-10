@@ -31,9 +31,11 @@ Web Scraping for data is
 
 examples of webscraping gone bad - 
 
-example of mothers group scrape
+https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/
 
+https://jaxenter.com/data-scraping-cases-165385.html
 
+https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data
 
 
 
