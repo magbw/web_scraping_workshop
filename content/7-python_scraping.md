@@ -8,7 +8,7 @@ description: >
 ---
 
 ## Python for webscraping
-Python is well suited for programatically scraping data from websites. There are three major packages used to webscraping in python.
+Python is well suited for programatically scraping data from websites. There are three major packages used to webscraping in python.<br>
 **Beautifulsoup** is used for extracting and parsing (breaking down) webpage content from static pages <br> 
 **selenium** is used to navigate webpages, input data into text fields, take screenshots and interact with dymanic pages <br>
 **scrapy** is a framework for webscraping, look into it once you become comfortable with coding. We will not work with scrapy in the workshop, however, <a href='https://librarycarpentry.org/lc-webscraping/04-scrapy/index.html' target='_blank'>this </a> workshop offers a nice overview.
