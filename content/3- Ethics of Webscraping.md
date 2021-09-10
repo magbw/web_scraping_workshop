@@ -25,7 +25,7 @@ For the data you wish to find; are there people, living or dead, involved?  coul
 If you are wondering if you should really scrape a page for data, the answer is you probably shouldn't. 
 
 Web Scraping for data is  
-- excellent for publically available content - 
+- excellent for publically available content 
 - probelmatic where there are people involved - as there are both privacy issues and ethical concerns with this. 
 - not so cool to try and scrape data from behind a paywall or on private pages or from social media groups or forums
 
