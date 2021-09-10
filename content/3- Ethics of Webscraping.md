@@ -8,7 +8,7 @@ description: >
 
 ## Getting started  
 
-Webscraping is using code, an API or web based add on to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
+Webscraping is using code, an API or web based application to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
 
 As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
 
@@ -17,6 +17,8 @@ As web pages have different levels of access and different tupes of information 
 
 Before scraping-
 find out if the data is freely publically available. To find this out check the permissions as set by the page owners, you can find this using the /robots.txt add on.
+
+Be sure to only scrape pages you specified on your ethics application forms.  Ethics forms are <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">found here</a>.
 
 Are you wanting to scrape social media pages or a forum? IS the forum public or private? can you access the materails with outa login? 
 For the data you wish to find; are there people, living or dead, involved?  could their identity or privacy be compromised? is the page you wish to scrape paywalled?  is the group private or public? 
