@@ -95,4 +95,5 @@ results_parsed <- fromJSON(results)
 ```
 
 ### Twitter API through python
+You will need to setup a <a href='https://developer.twitter.com/en/products/twitter-api/academic-research' target='_blank'>twitter academic account</a> to use their API.
 

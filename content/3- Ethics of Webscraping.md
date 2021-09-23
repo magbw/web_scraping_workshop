@@ -8,7 +8,7 @@ description: >
 
 ## Getting started  
 
-Webscraping is using code, an API or web based add on to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
+Webscraping is using code, an API or web based application to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
 
 As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
 
@@ -18,27 +18,33 @@ As web pages have different levels of access and different tupes of information 
 Before scraping-
 find out if the data is freely publically available. To find this out check the permissions as set by the page owners, you can find this using the /robots.txt add on.
 
+Be sure to only scrape pages you specified on your ethics application forms.  Ethics forms are <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">found here</a>.
+
 Are you wanting to scrape social media pages or a forum? IS the forum public or private? can you access the materails with outa login? 
 For the data you wish to find; are there people, living or dead, involved?  could their identity or privacy be compromised? is the page you wish to scrape paywalled?  is the group private or public? 
 If you are wondering if you should really scrape a page for data, the answer is you probably shouldn't. 
 
 Web Scraping for data is  
-- excellent for publically available content - 
+- excellent for publically available content 
 - probelmatic where there are people involved - as there are both privacy issues and ethical concerns with this. 
 - not so cool to try and scrape data from behind a paywall or on private pages or from social media groups or forums
 
-examples of webscraping gone bad - 
 
-example of mothers group scrape
+The legality of web scraping is still a grey area. Many webpages forbid scraping in their ToS, but this is not generally enforceable. Issues with data scraping generally occur where the scraped data is used for profit.  Researchers need to remain alert and be aware of restrictions on data scraping and know of the implications of scraping in legal cases.
 
+The following links provide information on cases where companies have sued webscrapers for accessing and using their data. 
 
+https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/
+
+https://jaxenter.com/data-scraping-cases-165385.html
+
+https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data
 
 
 
 
 --------
-
-## good practice/bad practice
+## how to stay out of trouble when scraping
 
 WHERE YOU CAN, USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
