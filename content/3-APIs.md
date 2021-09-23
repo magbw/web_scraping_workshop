@@ -36,7 +36,7 @@ https://explorer.natureserve.org/api-docs/
 ### API request
 First we need to formulate an API request. 
 This can consist of the following:
-* **endpoint** Think of an endpoint as the base URL for a webpage
+* **endpoint** Think of an endpoint as the base URL for a website
 * **relative path** for the dataset of interest 
 * **an id** if were after a specific case/species/type
 * **token** access tokens may be required
@@ -53,7 +53,7 @@ ELEMENT_GLOBAL.2.154701
 Put it all together and paste it into your webbrowser to display the data.
 https://explorer.natureserve.org/api/data/taxon/ELEMENT_GLOBAL.2.154701
 
-If you open the API request in firefox display nicely, and there is a save button to download it.
+If you open the API request in firefox, it displays nicely, and there is a save button to download it.
 
 {% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="JSON formatted in firefox" width="75%" %}
 
