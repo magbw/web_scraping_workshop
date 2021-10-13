@@ -25,7 +25,7 @@ Robots
 
 eg; to find the permissions for a griffith university at /robots.txt to the address  griffith.edu.au/robots.txt this will tell you what data you can and cannot scrape.
 
-
+more info on Robots can be<a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
 
 ## Ethical consderations
 
