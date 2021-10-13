@@ -15,10 +15,20 @@ Prior to starting any project you will need to understand the potential ethical 
 As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
 
 
-## Ethical consderations
-
+## getting started
 Before scraping-
-find out if the data is freely publically available. To find this out check the permissions as set by the page owners, you can find this using the /robots.txt add on.
+
+Find out if the data is freely publically available. 
+To find this out check the permissions as set by the page owners, find and read the terms and conditions, look for an API and use the Robots.
+
+Robots
+'A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.' more practically, adding /robots.txt to a web address will tell you the page settings for web scraping. 
+
+eg; to find the permissions for a griffith university at /robots.txt to the address  griffith.edu.au/robots.txt this will tell you what data you can and cannot scrape.
+
+
+
+## Ethical consderations
 
 Be sure to only scrape pages you specified on your ethics application forms.  Ethics forms are <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">found here</a>.
 
