@@ -38,7 +38,7 @@ First we need to formulate an API request.
 This can consist of the following:
 * **endpoint** Think of an endpoint as the base URL for a website
 * **relative path** for the dataset of interest 
-* **an id** if were after a specific case/species/type
+* **an id** if we're after a specific case/species/type
 * **token** access tokens may be required
 
 NatureServe API endpoint:
