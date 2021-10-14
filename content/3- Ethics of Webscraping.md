@@ -10,13 +10,24 @@ description: >
 
 Webscraping is using code, an API or web based application to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
 
+Prior to starting any project you will need to understand the potential ethical issues and apply for <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith ethics approval</a>.. 
+
 As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
 
 
-## Ethical consderations
+## Before scraping
 
-Before scraping-
-find out if the data is freely publically available. To find this out check the permissions as set by the page owners, you can find this using the /robots.txt add on.
+Find out if the data is freely publically available. 
+To find this out check the permissions as set by the page owners, find and read the terms and conditions, look for an API and use the Robots.
+
+Robots
+'A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.' more practically, adding /robots.txt to a web address will tell you the page settings for web scraping. 
+
+eg; to find the permissions for a griffith university at /robots.txt to the address  griffith.edu.au/robots.txt this will tell you what data you can and cannot scrape.
+
+more info on Robots can be<a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
+
+## Ethical consderations
 
 Be sure to only scrape pages you specified on your ethics application forms.  Ethics forms are <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">found here</a>.
 
@@ -44,7 +55,7 @@ https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data
 
 
 --------
-## how to stay out of trouble when scraping
+## How to stay out of trouble when scraping
 
 WHERE YOU CAN, USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
