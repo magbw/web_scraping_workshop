@@ -56,7 +56,7 @@ We can access the text of an individual quote using the .text command. We will s
 ```python
 print(quote[0].text)
 ```
-Lets remove the html for all the quotes. We will use a loop to go through the list. We will add the quote text to a new list called quotes.
+Lets retrieve the text only for the quotes. We will use a loop to go through the list. We will add the quote text to a new list called quotes.
 
 
 ```python
@@ -130,6 +130,26 @@ for i in range(1,len(author_soup)):
     quotes.append(quote_soup[i].text)
 
 print(authors)
+```
+
+Lets create a wordcloud of all the quotes we scraped, because, well, science!!!
+
+
+
+```python
+pip install wordcloud
+import wordcloud
+import matplotlib.pyplot as plt # used to plot the wordcloud
+
+# Create and generate a word cloud image of quotes
+quotes=" ".join(map(str,quotes)) # turns the list of quotes into a single string of all quotes i.e. ['a', 'b', 'c'] -> 'a b c'
+wordcloud = WordCloud().generate(quotes)
+
+# Display the wordcloud image
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+
 ```
 
 Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
