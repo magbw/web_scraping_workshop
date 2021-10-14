@@ -134,8 +134,6 @@ print(authors)
 
 Lets create a wordcloud of all the quotes we scraped, because, well, science!!!
 
-
-
 ```python
 pip install wordcloud
 import wordcloud
@@ -151,6 +149,8 @@ plt.axis("off")
 plt.show()
 
 ```
+
+{% include figure.html img="Figure_1.png" alt="next page"  width="75%" %}
 
 Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
 
