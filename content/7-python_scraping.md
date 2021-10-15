@@ -110,9 +110,10 @@ for i in range(0,20):
 
 print(pages)
 
+# lets create a list containing all the html content for each author and each quote
 quote_soup = []
 author_soup = []
-for i in range(0,len(pages)):
+for i in range(1,len(pages)):
     quotes_url = pages[i] 
     html_text = requests.get(quotes_url).text 
     quotes_soup = BeautifulSoup(html_text, 'html.parser')
@@ -121,7 +122,7 @@ for i in range(0,len(pages)):
     quote_soup = quote_soup + quote
     author_soup = author_soup + author   
 
-print(author_soup) 
+print(author) 
 
 authors = []
 quotes = []
@@ -135,8 +136,8 @@ print(authors)
 Lets create a wordcloud of all the quotes we scraped, because, well, science!!!
 
 ```python
-pip install wordcloud
-import wordcloud
+#pip install wordcloud
+from wordcloud import WordCloud
 import matplotlib.pyplot as plt # used to plot the wordcloud
 
 # Create and generate a word cloud image of quotes
@@ -151,6 +152,40 @@ plt.show()
 ```
 
 {% include figure.html img="Figure_1.png" alt="next page"  width="75%" %}
+
+Often we're interested in scraping data that is associated with specific tags, such as a Twitter #tag. 
+Lets scape quotes based on their tags.
+
+{% include figure.html img="Quotes_tags.png" alt="next page"  width="75%" %}
+
+Lets inspect the tag 'inspirational' to figure out how we can scrape it.
+
+```html
+<a class='tag' href='/tag/inspirational/page/1/'>inspirational</a>
+```
+Its an 'a' tag. This is a relative URL path. We can add the relative URL path to the quotes home page URL.
+Paste this into your browser "https://quotes.toscrape.com/tag/inspirational/page/1". It displays all quotes with the inspirational tag. Notice that there is a next button at the bottom of the page, there's multiple page containing inspirational quotes.
+We can reuse most of our previous code, all we really need to change is the URL.
+
+```python
+pages = [] 
+for i in range(1,2):
+    page = "https://quotes.toscrape.com" + '/tag/inspirational/page/' + str(i) + '/' # create a string of the url, with each loop the page number increases by one 
+    pages.append(page) # write each url to a string
+
+inspirational_soup = []
+for i in range(0,len(pages)):
+    quotes_url = pages[i] 
+    html_text = requests.get(quotes_url).text 
+    quotes_soup = BeautifulSoup(html_text, 'html.parser')
+    inspirational_soup = quotes_soup.find_all('span', class_='text')
+
+inspirational_quotes = []
+
+for i in range(1,len(inspirational_soup)):    
+    inspirational_quotes.append(inspirational_soup[i].text)
+
+```
 
 Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
 
