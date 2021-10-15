@@ -51,7 +51,7 @@ quote = quotes_soup.find_all('span', class_='text')
 print(quote)
 ```
 This has returned us a list with all the quotes on the first page. We still have some html code that we are probably not interested in. 
-We can access the text of an individual quote using the .text command. We will subset our quote list to the first element and return the text.
+We can access the text of an individual quote using the .text command. We will subset our quote list to the first element and return the text. Remember [] are used to subset a list, and 0 will return the first element in the list quote.
 
 ```python
 print(quote[0].text)
@@ -60,9 +60,9 @@ Lets retrieve the text only for the quotes. We will use a loop to go through the
 
 
 ```python
-quotes = []
-for i in range(0,len(quote)):
-    quotes.append(quote[i].text)
+quotes = [] # create a new empty list to append the text to at the end of each loop iteration
+for i in quote:
+    quotes.append(i.text)
 
 print(quotes)
 ```
@@ -78,16 +78,17 @@ Use your web browser to inspect the authors and figure out how you can get their
 Lets you our web browser to inspect author.
 
 {% include figure.html img="authorTag.png" alt="authors tag"  width="75%" %}
-
+</p>
+<p>
 ```python
 author = quotes_soup.find_all('small', class_='author')
 
 authors = []
-for i in range(0,len(author)):
-    authors.append(author[i].text)
+for i in author:
+    authors.append(i.text)
 
+print(authors)
 ```
-
 </p>
 </details>
 
@@ -185,7 +186,11 @@ inspirational_quotes = []
 for i in range(1,len(inspirational_soup)):    
     inspirational_quotes.append(inspirational_soup[i].text)
 
+print(inspirational_quotes)
+
 ```
+We have scrapped all the quotes with the tag 'inspirational'.
+
 
 Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
 
@@ -219,4 +224,41 @@ Now lets use some xpath to click the next button to more onto the next page
 driver.find_element_by_xpath('//span[text()="→"]').click()
 ```
 We've used selenium to click the next page button. 
- 
+
+Lets pull the quotes from the first page. We will do this the selenium way.
+
+```python
+
+import selenium
+from selenium import webdriver
+
+driver = webdriver.Firefox()
+
+quotes_url = 'https://quotes.toscrape.com/'
+
+driver.get(quotes_url)
+
+quotes = driver.find_elements_by_class_name('text')
+for quotes_text in quotes:
+    print(quotes_text.text)
+
+```
+
+Now we can get the quotes from every page using selenium.
+
+```python
+
+driver = webdriver.Firefox()
+quotes_url = 'https://quotes.toscrape.com/'
+driver.get(quotes_url)
+
+quotes = []
+for i in range(1,20):
+    q1 = driver.find_elements_by_class_name('text')
+    quotes.append(q1)
+    driver.find_element_by_xpath('//span[text()="→"]').click()
+
+for quotes_text in quotes:
+    print(quotes_text.text)
+
+```
