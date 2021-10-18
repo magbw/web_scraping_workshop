@@ -77,7 +77,10 @@ before you scrape a page make sure you check what is allowed using /robots.txt. 
 READ THE TERMS AND CONDITIONS
 yes, actually read them.  this will tell you what the page allows and the rules for page use.  The terms and conditions are there for a reason, see what they say and abide. 
 
-CONSIDER THE PAGES OWNERS AND USERS
+DONT SCRAPE PERSONAL INFO
+just dont,. find some other means to get the information. If you are are all unsure check with Ethics before you start, folks dont tend to react well if their personal data and privacy are breached. If you really, really, need to get this data be make sure all the content you use is depersonalised and saved securely. Attend a sensitive data workshop, imagine its your families data, then rethink your choices. 
+
+CONSIDER THE WEBPAGES OWNERS AND USERS
 when you scrape a page you are essentailly attacking the server, this can lead to the page going down, causing poor user experiences and generating bad press for the owners. 
 if you scrape, scrape in off peak times, and space out the requests, we go into this aspect of scraping though the tutorial.  you dont want your research to be confused with a DDos attack! 
 
