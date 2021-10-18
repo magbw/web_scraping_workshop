@@ -12,9 +12,10 @@ API is the acronym for Application Programming Interface, which is a software to
 If a website has an API, then use it. Generally, it won't let us collect data that your not allowed to collect, and its by far the easiest way to collect a websites data.
 
 Check here for (by no means comprehensive) lists of websites with API access:
-<a href='https://apilist.fun/' target='_blank'>https://apilist.fun/</a>
 
-<a href='https://github.com/public-apis/public-apis' target='_blank'>https://github.com/public-apis/public-apis</a>
+<a href='https://apilist.fun/' target='_blank'>APIlist/</a>
+
+<a href='https://github.com/public-apis/public-apis' target='_blank'>Public APIs</a>
 
 
 ## How do we use an API
