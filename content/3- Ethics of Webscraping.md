@@ -90,8 +90,10 @@ if you are going to scrape a page let the page adminstrators know you are going 
 
 
 ### references
-- https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping
-- https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/
-- https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01
-- https://robertorocha.info/on-the-ethics-of-web-scraping/
-- https://www.octoparse.com/blog/10-myths-about-web-scraping
+
+<a href='https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping' target="_blank"> https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping</a>.
+<a href='https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/' target="_blank"> https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/</a>.
+<a href='https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01' target="_blank"> https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01</a>.
+<a https://robertorocha.info/on-the-ethics-of-web-scraping/' target="_blank"> https://robertorocha.info/on-the-ethics-of-web-scraping/ </a>. 
+<a https://www.octoparse.com/blog/10-myths-about-web-scraping' target="_blank"> https://www.octoparse.com/blog/10-myths-about-web-scraping </a>. 
+
