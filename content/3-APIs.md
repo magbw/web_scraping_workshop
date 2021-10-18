@@ -13,7 +13,7 @@ If a website has an API, then use it. Generally, it won't let us collect data th
 
 Check here for (by no means comprehensive) lists of websites with API access:
 
-<a href='https://apilist.fun/' target='_blank'>APIlist/</a>
+<a href='https://apilist.fun/' target='_blank'>API list</a>
 
 <a href='https://github.com/public-apis/public-apis' target='_blank'>Public APIs</a>
 
