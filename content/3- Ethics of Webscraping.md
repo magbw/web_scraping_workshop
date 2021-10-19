@@ -77,7 +77,10 @@ before you scrape a page make sure you check what is allowed using /robots.txt. 
 READ THE TERMS AND CONDITIONS
 yes, actually read them.  this will tell you what the page allows and the rules for page use.  The terms and conditions are there for a reason, see what they say and abide. 
 
-CONSIDER THE PAGES OWNERS AND USERS
+DONT SCRAPE PERSONAL INFO
+just dont,. find some other means to get the information. If you are are all unsure check with Ethics before you start, folks dont tend to react well if their personal data and privacy are breached. If you really, really, need to get this data be make sure all the content you use is depersonalised and saved securely. Attend a sensitive data workshop, imagine its your families data, then rethink your choices. 
+
+CONSIDER THE WEBPAGES OWNERS AND USERS
 when you scrape a page you are essentailly attacking the server, this can lead to the page going down, causing poor user experiences and generating bad press for the owners. 
 if you scrape, scrape in off peak times, and space out the requests, we go into this aspect of scraping though the tutorial.  you dont want your research to be confused with a DDos attack! 
 
@@ -87,8 +90,10 @@ if you are going to scrape a page let the page adminstrators know you are going 
 
 
 ### references
-- https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping
-- https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/
-- https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01
-- https://robertorocha.info/on-the-ethics-of-web-scraping/
-- https://www.octoparse.com/blog/10-myths-about-web-scraping
+
+_<a href='https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping' target="_blank"> https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping</a>.
+<a href='https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/' target="_blank"> https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/</a>.
+<a href='https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01' target="_blank"> https://towardsdatascience.com/ethics-in-web-scrapin/</a>.
+<a href https://robertorocha.info/on-the-ethics-of-web-scraping/' target="_blank"> https://robertorocha.info/on-the-ethics-of-web-scraping/ </a>. 
+<a href https://www.octoparse.com/blog/10-myths-about-web-scraping' target="_blank"> https://www.octoparse.com/blog/10-myths-about-web-scraping/ </a>. 
+
