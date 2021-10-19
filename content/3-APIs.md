@@ -28,10 +28,7 @@ python: Tweepy
 
 ## Lets try it ourselves
 NatureServe is a biodiversity conservation group that classifies, maps and sets biodiversity conservation goals.
-They have a huge range of biodiversity data for the Americas.
-
-Documentation 
-https://explorer.natureserve.org/api-docs/
+They have a huge range of biodiversity data for the Americas. There are a few pieces of information we need to create a get URL.
 
 ### API request
 First we need to formulate an API request. 
@@ -40,6 +37,9 @@ This can consist of the following:
 * **relative path** for the dataset of interest 
 * **an id** if we're after a specific case/species/type
 * **token** access tokens may be required
+
+All this information can usually be found in the websites API documentation
+https://explorer.natureserve.org/api-docs/
 
 NatureServe API endpoint:
 https://explorer.natureserve.org/
