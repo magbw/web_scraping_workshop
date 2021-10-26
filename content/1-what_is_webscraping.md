@@ -22,7 +22,7 @@ There are two basic categories of webscraping software,  the first category are 
 The second method is to use code to extract the data requried. There are a variety of packages used in Python and R that will scrape data. In this workshop we will look at packages such as beautifulsoup, slesium and scrapy. 
 
 
-### references
+### References
 
 <a href='https://www.parsehub.com/blog/what-is-web-scraping/' target="_blank">www.parsehub.com/blog/what-is-web-scraping</a>
 
