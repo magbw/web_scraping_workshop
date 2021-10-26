@@ -58,7 +58,7 @@ The following links provide information on cases where companies have sued websc
 
 <a href='https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/' target="_blank"> https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/</a>.
 
-<a href='https://jaxenter.com/data-scraping-cases-165385.htmlo' target="_blank"> https://jaxenter.com/data-scraping-cases-165385.html</a>.
+<a href='https://jaxenter.com/data-scraping-cases-165385.html' target="_blank"> https://jaxenter.com/data-scraping-cases</a>.
 
 <a href='https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data' target="_blank"> https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data</a>.
 
