@@ -67,6 +67,9 @@ The following links provide information on cases where companies have sued websc
 --------
 ## How to stay out of trouble when scraping
 
+RESEARCH ETHICS
+Only scrape pages you have ethics approval for.  You will need ethics approval to publish the materials from the pages scraped. If in doubt contact <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith Research Ethics</a>, or <a href='https://www.griffith.edu.au/copyright-matters' target="_blank">Griffith Copyright</a>.
+
 WHERE YOU CAN, USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
 
