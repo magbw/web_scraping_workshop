@@ -17,6 +17,11 @@ Check here for (by no means comprehensive) lists of websites with API access:
 
 <a href='https://github.com/public-apis/public-apis' target='_blank'>Public APIs</a>
 
+Guardian.co.uk <a href='https://open-platform.theguardian.com/' target='_blank'>API</a>
+
+Australian news sources <a href='https://mediastack.com/sources/australia-news-api' target='_blank'>API</a> 
+
+
 
 ## How do we use an API
 
