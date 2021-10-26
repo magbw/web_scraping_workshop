@@ -24,6 +24,6 @@ The second method is to use code to extract the data requried. There are a varie
 
 ### references
 
-<a href='https://www.parsehub.com/blog/what-is-web-scraping/' target="_blank">www.parsehub.com/blog/what-is-web-scraping</a
-<a href='https://www.webharvy.com/articles/what-is-web-scraping.html' target="_blank">www.webharvy.com/articles/what-is-web-scraping</a
-<a href='https://librarycarpentry.org/lc-webscraping/' target="_blank">librarycarpentry.org/lc-webscraping/</a
+<a href='https://www.parsehub.com/blog/what-is-web-scraping/' target="_blank">www.parsehub.com/blog/what-is-web-scraping</a>
+<a href='https://www.webharvy.com/articles/what-is-web-scraping.html' target="_blank">www.webharvy.com/articles/what-is-web-scraping</a>
+<a href='https://librarycarpentry.org/lc-webscraping/' target="_blank">librarycarpentry.org/lc-webscraping/</a>
