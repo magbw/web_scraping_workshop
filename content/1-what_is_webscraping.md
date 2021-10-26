@@ -17,14 +17,15 @@ Web Scraping is different to Web Crawling in that web scraping is for specific d
 
 A web scraping software will automatically load, crawl and extract data from multiple pages of websites based on your requirement. It is either custom built for a specific website or one which can be configured to work with any website (https://www.webharvy.com/articles/what-is-web-scraping.html)  
 
-There are two basic categories of webscraping software
-the first category are browser or cloud based and installed locally to you computer. this is your webscraper IO type thing
+There are two basic categories of webscraping software,  the first category are browsers or cloud based and installed locally to you computer. This is your webscraper IO type tool and can pull data from individual webapages. 
 
-The second method is to use code to extract the data requried. There are a variety of packages t osu in Python and R that will scrape data. In this workshop we will look at packages such as beautifulsoup, slesium and scrapy. 
+The second method is to use code to extract the data requried. There are a variety of packages used in Python and R that will scrape data. In this workshop we will look at packages such as beautifulsoup, slesium and scrapy. 
 (https://www.webharvy.com/articles/what-is-web-scraping.html)
 
 
 ### references
 https://www.parsehub.com/blog/what-is-web-scraping/
+
 https://www.webharvy.com/articles/what-is-web-scraping.html
+
 https://librarycarpentry.org/lc-webscraping/
