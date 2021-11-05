@@ -29,9 +29,9 @@ You use URL's to collect a websites data with an API, this is refered to as an `
 
 Once you have a formulated a suitable API request, you will need to pull the data (i.e. get it onto your computer). This is most commonly achieved using a programming language. We generally use  R or Python.  If you are comfortable with either of these languages check these guides.
 
-<a href='https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html' target='_blank> r-project</a>
+<a href='https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html' target='_blank'> r-project</a>
 
-<a href='https://www.dataquest.io/blog/python-api-tutorial/'target=_blank'> Python API Tutorial </a>
+<a href='https://www.dataquest.io/blog/python-api-tutorial/' target='_blank'> Python API Tutorial </a>
 
 Some commonly used websites, such as Twitter, have packages that can be used to interact with the API. Packages that use Twitter API's:
 
