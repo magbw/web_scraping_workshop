@@ -194,6 +194,65 @@ We have scrapped all the quotes with the tag 'inspirational'.
 
 Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
 
+
+Lets look at another website that we can use to practice webscraping 'https://books.toscrape.com'
+
+
+## Challenge
+Lets try to scrape all the prices of books. Inspect the price of a book and try to figure out what tag and attribute we can use to scrape it.
+
+<details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h2>Solution</h2></summary>
+<p>
+
+```html 
+<p class="price_color">£51.77</p>
+```
+
+We can use the p tag and class attribute in the find_all function
+
+```python
+find_all('p', class_="price_color")
+```
+
+</p>
+</details>
+
+Lets build some code that scrapes price from the first 20 pages. First we need to figure out how to move onto the next page. Inspect the next page button.
+
+```html
+<a href="catalogue/page-2.html">next</a>
+```
+Paste 'https://books.toscrape.com/catalogue/page-2.html' into your browser. Nice, it moves onto the next page.
+
+```python
+pages = [] 
+for i in range(0,20):
+    page = "https://books.toscrape.com" + '/catalogue/page-' + str(i) + '.html' # create a string of the url, with each loop the page number increases by one 
+    pages.append(page) # write each url to a string
+
+#check that the first and last URL's look correct.
+print(pages[0], pages[-1]) # remember, [-1] indexes to the last from the end
+
+
+price_soup = []
+for i in range(0,len(pages)):
+    price_url = pages[i] 
+    html_text = requests.get(price_url).text 
+    soup = BeautifulSoup(html_text, 'html.parser')
+    price = soup.find_all('p', class_='price_color')
+    price_soup.append(price)
+    
+print(price_soup)   
+
+
+prices = []
+for i in range(1,len(price_soup)):    
+    prices.append(price_soup[i].text)
+
+print(prices)
+```
+
+
 ## Selenium
 Selenium is used to ineract with dynamic webpages.
 To use selenium you will need a webdriver. You can get a webdriver for chrome, although it can be difficult to use. I would suggest using the <a href='https://github.com/mozilla/geckodriver/releases' target='_blank'>firefox webdriver</a>
