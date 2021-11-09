@@ -55,17 +55,20 @@ The legality of web scraping is still a grey area. Many webpages forbid scraping
 
 The following links provide information on cases where companies have sued webscrapers for accessing and using their data. 
 
-https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/
 
-https://jaxenter.com/data-scraping-cases-165385.html
+<a href='https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/' target="_blank"> https://techcrunch.com/2020/10/01/facebook-sues-two-companies-engaged-in-data-scraping-operations/</a>.
 
-https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data
+<a href='https://jaxenter.com/data-scraping-cases-165385.html' target="_blank"> https://jaxenter.com/data-scraping-cases</a>.
 
+<a href='https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data' target="_blank"> https://www.informationweek.com/social/linkedin-sues-after-scraping-of-user-data</a>.
 
 
 
 --------
 ## How to stay out of trouble when scraping
+
+RESEARCH ETHICS
+Only scrape pages you have ethics approval for.  You will need ethics approval to publish the materials from the pages scraped. If in doubt contact <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith Research Ethics</a>, or <a href='https://www.griffith.edu.au/copyright-matters' target="_blank">Griffith Copyright</a>.
 
 WHERE YOU CAN, USE THE API
 Some websites have their own APIs built specifically for you to gather data without having to scrape it. This means that you’d be doing it according to their rules; you have been authorized to get the information. So, if there’s an API, use it instead of scraping.
@@ -91,9 +94,13 @@ if you are going to scrape a page let the page adminstrators know you are going 
 
 ### references
 
-_<a href='https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping' target="_blank"> https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping</a>.
-<a href='https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/' target="_blank"> https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/</a>.
-<a href='https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01' target="_blank"> https://towardsdatascience.com/ethics-in-web-scrapin/</a>.
-<a href https://robertorocha.info/on-the-ethics-of-web-scraping/' target="_blank"> https://robertorocha.info/on-the-ethics-of-web-scraping/ </a>. 
-<a href https://www.octoparse.com/blog/10-myths-about-web-scraping' target="_blank"> https://www.octoparse.com/blog/10-myths-about-web-scraping/ </a>. 
+<a href='https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping' target="_blank"> https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping</a>
+
+<a href='https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/' target="_blank"> https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/</a>
+
+<a href='https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01' target="_blank"> https://towardsdatascience.com/ethics-in-web-scraping/</a>
+
+<a href='https://robertorocha.info/on-the-ethics-of-web-scraping/' target="_blank"> https://robertorocha.info/on-the-ethics-of-web-scraping/ </a>
+
+<a href='https://www.octoparse.com/blog/10-myths-about-web-scraping' target="_blank"> https://www.octoparse.com/blog/10-myths-about-web-scraping/ </a>
 

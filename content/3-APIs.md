@@ -17,15 +17,26 @@ Check here for (by no means comprehensive) lists of websites with API access:
 
 <a href='https://github.com/public-apis/public-apis' target='_blank'>Public APIs</a>
 
+Guardian.co.uk <a href='https://open-platform.theguardian.com/' target='_blank'>API</a>
+
+Australian news sources <a href='https://mediastack.com/sources/australia-news-api' target='_blank'>API</a> 
+
+
 
 ## How do we use an API
 
 You use URL's to collect a websites data with an API, this is refered to as an `API request`. There will be certain sections of the API request that can be manipulated to collect specific data. You will need to check out the websites API documentation for details.
 
-Once you have a formulated a suitable API request, you will need to pull the data (i.e. get it onto your computer). This is most commonly achieved using a programming language. Some commonly used websites, such as Twitter, have packages that can be used to interact with the API.
+Once you have a formulated a suitable API request, you will need to pull the data (i.e. get it onto your computer). This is most commonly achieved using a programming language. We generally use  R or Python.  If you are comfortable with either of these languages check these guides.
 
-Packages that use Twitter API's:
+<a href='https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html' target='_blank'> r-project</a>
+
+<a href='https://www.dataquest.io/blog/python-api-tutorial/' target='_blank'> Python API Tutorial </a>
+
+Some commonly used websites, such as Twitter, have packages that can be used to interact with the API. Packages that use Twitter API's:
+
 R: rtweet 
+
 python: Tweepy
 
 
