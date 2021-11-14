@@ -43,7 +43,7 @@ python: Tweepy
 ## Lets try it ourselves
 NatureServe is a biodiversity conservation group that classifies, maps and sets biodiversity conservation goals.
 They have a huge range of biodiversity data for the Americas. There are a few pieces of information we need to create a get URL. 
-This tutorial has been developed using the Mozilla Firefox browser, for ease of use we suggest you use this browser for coding and development. <a href='https://www.mozilla.org/en-US/firefox/new/' target='_blank'> Download firefox here <a/>
+*This tutorial has been developed using the Mozilla Firefox browser, for ease of use we suggest you use this browser for coding and development.* <a href='https://www.mozilla.org/en-US/firefox/new/' target='_blank'> Download firefox here <a/>
 
 ### API request
 First we need to formulate an API request. 
