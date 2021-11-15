@@ -39,6 +39,9 @@ R: rtweet
 
 python: Tweepy
 
+### Twitter API
+You will need to setup a <a href='https://developer.twitter.com/en/products/twitter-api/academic-research' target='_blank'>twitter academic account</a> to use their API.
+
 
 ## Lets try it ourselves
 NatureServe is a biodiversity conservation group that classifies, maps and sets biodiversity conservation goals.
@@ -71,7 +74,7 @@ If you open the API request in firefox, it displays nicely, and there is a save 
 
 {% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="JSON formatted in firefox" width="75%" %}
 
-Here is the same data displayed in Chrome.
+Here is the same data displayed in Chrome. You can install the <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" target="_blank">json viewer extension </a> so tht it is displayed nicely.
 
 ```
 {"elementGlobalId":154701,"circumscripConfidence":null,"classificationLevel":{"id":17,"classificationLevelNameEn":"Species","classificationLevelNameEs":"Especies","classificationLevelNameFr":"Espèce"},"classificationStatus":{"id":1,"classificationStatusDescEn":"Standard","classificationStatusDescEs":"Estándar","classificationStatusDescFr":"Standard"},"iucn":{"id":5,"iucnDescEn":"Vulnerable","iucnDescEs":"Vulnerable","iucnDescFr":"Vulnérable","iucnCode":"VU"},"nameCategory":{"id":4,"nameCategoryDescEn":"Vascular Plant","nameCategoryDescEs":"Planta vascular","nameCategoryDescFr":"Plante vasculaire","nameTypeCd":"P","nameTypeDesc":"Botanical"},"rankMethodUsed":{"id":1,"rankMethodUsedDescEn":"Legacy Rank calculation - Excel v3.1x","rankMethodUsedDescEs":null,"rankMethodUsedDescFr":null,"rankMethodUsedExternalDescEn":"Ranked by calculator","rankMethodUsedExternalDescEs":null,"rankMethodUsedExternalDescFr":null},"formattedScientificName":"<i>Hydrastis canadensis</i>","scientificName":"Hydrastis canadensis","scientificNameAuthor":"L.","primaryCommonName":"Goldenseal","relatedItisNames":"<i>Hydrastis canadensis</i> L. (TSN 18781)","uniqueId":"ELEMENT_GLOBAL.2.154701","elcode":"PDRAN0F010","conceptRefFullCitation":"Kartesz, J.T. 1994. A synonymized checklist of the vascular flora of the United States, Canada, and Greenland. 2nd edition. 2 vols. Timber Press, Portland, OR.","conceptName":"<i>Hydrastis canadensis</i>","taxonomicComments":"<i>Hydrastis canadensis</i> occurs in eastern North America and is a monotypic genus. In the most current taxonomic revision <i>Hydrastis </i>is placed in Hydrastidaceae, with one other monotypic genus, <i>Glaucidium,</i> which is restricted to Japan (Tobe 2003).","roundedGRank":"G3","conservationStatusFactorsEditionDate":"2013-04-29","conservationStatusFactorsEditionAuthors":"Oliver, L.","primaryCommonNameLanguage":"EN","recordType":"SPECIES","elementNationals":[{"elementNationalId":211679,"classifConfidence":null,"nation":{"id":225,"nameEn":"United States","nameEs":"Estados Unidos","nameFr":"États-Unis","isoCode":"US","region":"United States"},"roundedNRank":"N3","elementSubnationals":[{"elementSubnationalId":294228,"subnation":{"id":34,"nameEn":"North Carolina","nameEs":"Carolina del Norte","nameFr":"Caroline du Nord","subnationCode":"NC","dnationId":225},"roundedSRank":"S3","srank":"S3","speciesSubnational":{"elementSubnationalId":294228,"hybrid":false,"exotic":false,"native":true}},{"elementSubnationalId":621497,"subnation":{"id":29,"nameEn":"Minnesota","nameEs":"Minnesota","nameFr":"Minnesota","subnationCode":"MN","dnationId":225},"roundedSRank":"S1","srank":"S1","speciesSubnational":{"elementSubnationalId":621497,"hybrid":false,"exotic":false,"native":true}},{"elementSubnationalId":380016,"subnation":
@@ -108,6 +111,52 @@ results <- httr::content(get_request, as='text')
 results_parsed <- fromJSON(results)
 ```
 
-### Twitter API through python
-You will need to setup a <a href='https://developer.twitter.com/en/products/twitter-api/academic-research' target='_blank'>twitter academic account</a> to use their API.
+###
 
+Lets have a look at another API that provides global covid-19 statistics: <a href="https://api.covid19api.com/" target="_blank">https://api.covid19api.com/</a>
+Lets look at the documentation: <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc" target="_blank">https://documenter.getpostman.com/view/10808728/SzS8rjbc</a>
+
+{% include figure.html img="covidAPI.png" alt="quotes tag"  width="75%" %}
+
+Select python as the language and requests as the package, it will provide you the code. Unfortunately it doesn't show the code for R.
+
+The left column contains all the different datasets we can get. 
+
+Click on the summary field and get the URL, or API call "https://api.covid19api.com/summary". The base URL is "https://api.covid19api.com/" and the relative path is "summary". Paste this URL into your web browser.
+
+Lets look at the data we can get from this API and the relative paths that we can append to the base URL to get this data.
+
+{% include figure.html img="allData.png" alt="quotes tag"  width="75%" %}
+
+
+
+
+Lets work through getting the infection data for 14th November 2021 for Canada. First we need to figure out if we can get the daily infection rate for the country Canada.
+
+We can get a list of countries by adding country to the base URL, i.e. https://api.covid19api.com/countries. Paste the full URL "https://api.covid19api.com/countries" into you web-browser, ideally firefox (it will be far easier to read).
+
+Use the find function click "crtl F" in the browser and a search bar will pop up, search Canada.
+
+{% include figure.html img="canada.png" alt="quotes tag"  width="75%" %}
+
+
+
+```python
+import requests
+import os
+import json
+
+url = 'https://api.covid19api.com/countries'
+result = requests.get(url).json()
+
+
+
+url = 'https://api.covid19api.com/premium/country/testing/south-africa'
+result = requests.get(url).json()
+
+# Write the data to a json formatted text file on your computer
+os.chdir('/Users/Documents/')
+with open('ELEMENT_GLOBAL.2.154701.txt', 'w') as convert_file: 
+     convert_file.write(json.dumps(result))
+
+```
