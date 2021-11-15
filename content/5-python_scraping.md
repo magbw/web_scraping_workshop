@@ -207,7 +207,7 @@ We have scrapped all the quotes with the tag 'inspirational'.
  
 
 # Part II
-Lets look at another website that we can use to practice webscraping <a href='https://books.toscrape.com' target=_"blank">books.toscrape.com<a/>
+Lets look at another website that we can use to practice webscraping <a href='https://books.toscrape.com' target=_"blank"> books.toscrape.com <a/>
 
 
 ## Challenge
