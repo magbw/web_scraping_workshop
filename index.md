@@ -8,8 +8,12 @@ layout: default
 {% include figure.html img="external-content.duckduckgo.com.jpg" alt="intro image here" caption="Library workshop" width="75%" %}
 
 
+## Install Anaconda with a python environment
 
-*See also:* [workshop-template](https://evanwill.github.io/workshop-template/), original minimal version.
+{% include anaconda_setup.html %}
+
+A python notebook containing the python script used for webscraping can be downloaded <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/gu-eresearch/web_scraping_workshop/blob/main/downloads/webscraping.ipynb" target="_blank">here</a>
+
 
 {% include toc.html %}
 
