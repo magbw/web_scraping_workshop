@@ -11,7 +11,7 @@
         <div class="col-md">
           <a class="h5" href="{{ '/' | relative_url }}">{{ site.title }}</a>
           <br>
-          <span class="pl-3"><a href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a> {{ site.pub_year }} {% include template/credits.html %} </span>
+          <span class="pl-3"><p><strong>Content:</strong> CC BY-SA {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a>{% else %}{{ site.author }}{% endif %} {% if site.github_username1 %} & <a href="https://github.com/{{ site.github_username1 }}">{{ site.author1 }}</a>{% endif %} {{ site.pub_year}} (get <a href="{{ site.source-code }}" target="_blank" rel="noopener">source code</a>). <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a></p> </span>
         </div>
         <div class="col-md">
           {% if site.search == true %}
