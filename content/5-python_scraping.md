@@ -137,7 +137,7 @@ print(authors)
 Lets create a wordcloud of all the quotes we scraped, because, well, science!!!
 
 ```python
-#pip install wordcloud
+!pip install wordcloud
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt # used to plot the wordcloud
 
