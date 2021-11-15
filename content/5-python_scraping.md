@@ -17,17 +17,28 @@ Python is well suited for programatically scraping data from websites. There are
 
 Beautiful soup is useful for scraping all content of a website, this includes the html content.
 To get started we need to import requests, this package will return a http response from the page we are interested in scraping.
-We will also import BeautifulSoup from the bs4 package, and import selenium.
+We will also import BeautifulSoup from the bs4 package. This is used for getting the web data.
 
 ```python
-import requests
-from bs4 import BeautifulSoup
-import selenium
+# import all required packages
 
+import requests # get and post data to anf from websites
+from bs4 import BeautifulSoup # get html from a website
+import selenium # interacting with a website
+import pandas as pd # good for working with dataframes
+#pip install wordcloud # run this line once to install the wordcloud package
+from wordcloud import WordCloud # create wordclouds
+import matplotlib.pyplot as plt # used to plot the wordcloud
+import math
+
+# Supply the URL that you would like to scrape
 quotes_url = 'https://quotes.toscrape.com/' 
+# Pull (download) all html data from the URL supplied above
 html_text = requests.get(quotes_url).text 
+#Parse the pull html data - make it look pretty
 quotes_soup = BeautifulSoup(html_text, 'html.parser')
 
+#Print out the html data that was just pulled. It is identical to the websites html code.
 print(quotes_soup)
 ```
 
@@ -46,25 +57,32 @@ We can use the tag and class to access quotes. This will get the first quote.
 
 
 ```python
+# Use the find_all function to pull just the html for each quote
 quote = quotes_soup.find_all('span', class_='text')
 
 print(quote)
+# Notice that the html information is still attached to each quote. i.e. the span tag <span></span> 
+# and the class and itemprop attributes
 ```
 This has returned us a list with all the quotes on the first page. We still have some html code that we are probably not interested in. 
 We can access the text of an individual quote using the .text command. We will subset our quote list to the first element and return the text. Remember [] are used to subset a list, and 0 will return the first element in the list quote.
 
 ```python
+# We can remove the html information with .item. Remeber that [] are used to access different elements in a list.
+# quote[0].text will return the text portion of the first element from the variable quote
 print(quote[0].text)
 ```
 Lets retrieve the text only for the quotes. We will use a loop to go through the list. We will add the quote text to a new list called quotes.
 
 
 ```python
+# The easiest way remove the html from all quotes is with a for loop
 quotes = [] # create a new empty list to append the text to at the end of each loop iteration
 for i in quote:
-    quotes.append(i.text)
+    quotes.append(i.text) #append will add each iteration to the list quotes
 
 print(quotes)
+#Now we have just the quotes
 ```
   
 That looks good.
@@ -134,15 +152,11 @@ for i in range(1,len(author_soup)):
 print(authors)
 ```
 
-Lets create a wordcloud of all the quotes we scraped, because, well, science!!!
+Lets create a wordcloud of all the quotes we scraped, because, well, science is also pretty!!!
 
 ```python
-#pip install wordcloud
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt # used to plot the wordcloud
-
-# Create and generate a word cloud image of quotes
 quotes=" ".join(map(str,quotes)) # turns the list of quotes into a single string of all quotes i.e. ['a', 'b', 'c'] -> 'a b c'
+print(quotes)
 wordcloud = WordCloud().generate(quotes)
 
 # Display the wordcloud image
@@ -190,9 +204,7 @@ print(inspirational_quotes)
 
 ```
 We have scrapped all the quotes with the tag 'inspirational'.
-
-
-Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy.  
+ 
 
 
 Lets look at another website that we can use to practice webscraping 'https://books.toscrape.com'
@@ -240,9 +252,9 @@ for i in range(0,len(pages)):
     html_text = requests.get(price_url).text 
     soup = BeautifulSoup(html_text, 'html.parser')
     price = soup.find_all('p', class_='price_color')
-    price_soup.append(price)
+    price_soup = price_soup + price
     
-print(price_soup)   
+print(price_soup)    
 
 
 prices = []
@@ -251,6 +263,32 @@ for i in range(1,len(price_soup)):
 
 print(prices)
 ```
+
+This returns a list of values
+```python
+
+['Â£53.74', 'Â£50.10', 'Â£47.82', 'Â£54.23'........]
+```
+The returned values look like strings, lets check.
+```python
+type(prices[0])
+
+str
+```
+Lets change the values to numbers, that is a better representation of price.
+We will change the string values to integers (whole numbers). This requires that we remove any characters, then round to a whole number.
+
+```python
+for i in range(0,len(prices)):
+    prices[i] = prices[i].replace('£', '') # replace is a pandas function, here we replace £ with nothing
+    prices[i] = prices[i].replace('Â', '')
+    prices[i] = float(prices[i]) # change from character to float number
+    prices[i] = math.floor(prices[i]) # round prices down to whole integer number
+
+print(prices)
+```
+
+Sometimes we might need to interact with the webpage. This could be to click the next button, or we might want to search for a particular item. In these cases we need to programatically interact with the webpage, this is where selenium comes in handy. 
 
 
 ## Selenium

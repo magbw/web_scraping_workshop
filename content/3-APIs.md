@@ -121,7 +121,7 @@ The left column contains all the different datasets we can get with API requests
 
 {% include figure.html img="allData.png" alt="quotes tag"  width="75%" %}
 
-{% include figure.html img="relativePaths.png" alt="quotes tag"  width="75%" %}
+{% include figure.html img="relativePaths.png" alt="quotes tag"  width="100%" %}
 
 This is the relative path from the example above: /dayone/country/:country/status/:status/live
 This API request requires 2 id's, :country is the id for the target country and :status is the id for the target status.
