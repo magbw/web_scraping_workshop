@@ -1,6 +1,8 @@
 ---
 title: What is webscraping and how can we scrape data from websites
 nav: Intro
+description: >
+    What is webscraping and why webscrape   
 ---
 
 Web scraping the process of scraping webpages for data points and creating a dataset that is usable for analysis. 
