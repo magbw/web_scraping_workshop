@@ -9,14 +9,13 @@ layout: default
 
 {% include toc.html %}
 
-## Install Anaconda with a python environment
-
-{% include anaconda_setup.html %}
-
-
 ## Python code saved as an ipython notebook
 
 An ipython notebook containing the python script used in this tutorial for webscraping can be downloaded <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/gu-eresearch/web_scraping_workshop/blob/main/downloads/webscraping.ipynb" target="_blank"> here</a>
+
+## Install Anaconda with a python environment
+
+{% include anaconda_setup.html %}
 
 
 Hosted by [eResearch, Griffith University](https://www.griffith.edu.au/eresearch-services).
