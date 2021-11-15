@@ -206,8 +206,8 @@ print(inspirational_quotes)
 We have scrapped all the quotes with the tag 'inspirational'.
  
 
-
-Lets look at another website that we can use to practice webscraping 'https://books.toscrape.com'
+# Part II
+Lets look at another website that we can use to practice webscraping <a href='https://books.toscrape.com' target=_"blank"> books.toscrape.com <a/>
 
 
 ## Challenge
