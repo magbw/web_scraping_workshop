@@ -207,6 +207,14 @@ print(inspirational_quotes)
 
 ```
 We have scrapped all the quotes with the tag 'inspirational'.
+
+<details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h2>Challenge</h2></summary>
+Change the tag to find different quotes
+
+changing only the tag, try some of the other possible tags to scrape. 
+
+    </details>
+
  
 
 # Part II
