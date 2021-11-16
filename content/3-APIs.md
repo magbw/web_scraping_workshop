@@ -67,7 +67,7 @@ Relative path to get data for species data:
 note that {ouSeqUid} indicates the species of interest
 
 
-The id for a specific species:
+The id for a specific species: </br>
 The API documentation provides an example API request for the relative path/id "/api/data/taxon/ELEMENT_GLOBAL.2.154701". From this we know that the API requires a species id that looks like "ELEMENT_GLOBAL.2.154701". Lets search for the American black bear on the NatureServe website and see if we can find an id.
 
 {% include figure.html img="natureServeId.png" alt="American black bear id" caption="NatureServe id for the American black bear" width="75%" %}
@@ -75,15 +75,15 @@ The API documentation provides an example API request for the relative path/id "
 * **an id** ELEMENT_GLOBAL.2.100661
 
 Put it all together and paste it into your webbrowser to display the data.
-https://explorer.natureserve.org/api/data/taxon/ELEMENT_GLOBAL.2.100661
+* **API request** https://explorer.natureserve.org/api/data/taxon/ELEMENT_GLOBAL.2.100661
 
 If you open the API request in firefox, it displays nicely, and there is a save button to download it.
 
-{% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="JSON formatted in firefox" width="75%" %}
+{% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="NatureServe JSON data formatted in FireFox" width="75%" %}
 
 You can install the <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" target="_blank">json viewer extension </a> so that it is displayed nicely.
 
-This is JSON formatted data, you can also GET data from most API's in XML and HTML. You will most likely need to use a programming language to GET the data from the websites database onto your computer (or any other location you want to store/analyse the data).
+This is JSON formatted data, you can also GET data from most API's in XML and HTML format. You will most likely need to use a programming language to GET the data from the websites database onto your computer (or any other location you want to store/analyse the data).
 
 ### Pull the data into python
 
@@ -125,9 +125,9 @@ Select python as the language and requests as the package, it will provide you t
 
 The left column contains all the different datasets we can get with API requests. Click on the default tab then "view more" button to look at some examples of the relative paths for data we can get from this API.
 
-{% include figure.html img="allData.png" alt="quotes tag"  width="75%" %}
+{% include figure.html img="allData.png" alt="quotes tag" caption="API Documentation for the website 'https://api.covid19api.com/'"  width="75%" %}
 
-{% include figure.html img="relativePaths.png" alt="quotes tag"  width="100%" %}
+{% include figure.html img="relativePaths.png" alt="quotes tag" caption="Examples of API requests" width="100%" %}
 
 This is the relative path from the example above: /dayone/country/:country/status/:status/live
 This API request requires 2 id's, :country is the id for the target country and :status is the id for the target status.
@@ -138,13 +138,13 @@ We can get a list of countries by adding country to the base URL, i.e. https://a
 
 Use the find function click "crtl F" in the browser and a search bar will pop up, search Canada.
 
-{% include figure.html img="canada.png" alt="quotes tag"  width="75%" %}
+{% include figure.html img="canada.png" alt="quotes tag" caption="Example relative path to GET daily covid cases fof an individual country" width="75%" %}
 
 Our API request.
-endpoint: https://api.covid19api.com
-relative path: /dayone/country/:country/status/:status/live
-country id: canada
-status id: confirmed
+* **endpoint**: https://api.covid19api.com
+* **relative path**: /dayone/country/:country/status/:status/live
+* **country id**: canada
+* **status id**: confirmed
 
 https://api.covid19api.com/dayone/country/canada/status/confirmed/live
 
@@ -160,5 +160,4 @@ result = requests.get(api_request).json()
 os.chdir('/Users/Documents/')
 with open('canada_covid_daily.txt', 'w') as convert_file: 
      convert_file.write(json.dumps(result))
-
 ```
