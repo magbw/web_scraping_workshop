@@ -8,14 +8,17 @@ description: >
 ---
 
 ## Python for webscraping
-Python is well suited for programatically scraping data from websites. There are three major packages used to webscraping in python.<br>
-**Beautifulsoup** is used for extracting and parsing (breaking down) webpage content from static pages <br> 
-**selenium** is used to navigate webpages, input data into text fields, take screenshots and interact with dymanic pages <br>
+Python is well suited to programatically scrape data from websites. There are three major packages used to webscraping in python.<br>
+**Beautifulsoup** is used for extracting and parsing (breaking down) static web content <br> 
+**selenium** is used to navigate webpages, input data into text fields, take screenshots and interact with dymanic web content <br>
 **scrapy** is a framework for webscraping, look into it once you become comfortable with coding. We will not work with scrapy in the workshop, however, <a href='https://librarycarpentry.org/lc-webscraping/04-scrapy/index.html' target='_blank'>this </a> workshop offers a nice overview.
+
+Static web content is built into the webpage, that is, its does not store any extra data on a remote server (think of a wikipedia page). </br>
+In contrast, dynamic content is stored on a remote server and when you interact with the page it sends or posts data from a remote server. Think of facebook, you can write comments in a post which and watch videos. Dynamic content is often hidden on a remote server and will not be visible to a webscraper without first interacting with the webpage so that the server posts it.
 
 ## Beautiful Soup
 
-Beautiful soup is useful for scraping all content of a website, this includes the html content.
+Beautiful soup is useful for scraping static content of a website, this includes the html content.
 To get started we need to import requests, this package will return a http response from the page we are interested in scraping.
 We will also import BeautifulSoup from the bs4 package. This is used for getting the web data.
 

@@ -9,7 +9,11 @@ description: >
 ## Webpage structure 
 You should understand the basic structure of a webpage before scraping it for information. In this lesson we will work through some gerneral webpage structure.
 
-Webpages are built using at least html, css and javascript. html formats the page, css makes it look pretty, and javascript provides functionality.
+Webpages are built using at least html, css and javascript/php/python. html formats the page, css makes it look pretty, and javascript/php/python/..... provides functionality.
+
+## Static vs Dynamic content
+Static web content is built into the webpage, that is, its does not store any extra data on a remote server (think of a wikipedia page). </br>
+In contrast, dynamic content is stored on a remote server and when you interact with the page it sends or posts data from a remote server. Think of facebook, you can write comments in a post which and watch videos. Dynamic content is often hidden on a remote server and will not be visible to a webscraper without first interacting with the webpage so that the server posts it.
 
 ## Inspecting webpage structure 
 Open up a firefox or chrome web browser. Highlight a section and right click, a menu bar will appear, click on inspect. This will open a new tab showing the webpage structure, the relevant section will be highlighted.

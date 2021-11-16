@@ -119,7 +119,7 @@ results_parsed <- fromJSON(results)
 Lets have a look at another API that provides global covid-19 statistics: <a href="https://api.covid19api.com/" target="_blank">https://api.covid19api.com/</a>
 Lets look at the <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc" target="_blank">documentation</a>
 
-{% include figure.html img="covidAPI.png" alt="quotes tag"  width="75%" %}
+{% include figure.html img="covidAPI.png" alt="quotes tag" caption="Examples of API requests" width="75%" %}
 
 Select python as the language and requests as the package, it will provide you the code. Unfortunately it doesn't show the code for R.
 
@@ -127,7 +127,7 @@ The left column contains all the different datasets we can get with API requests
 
 {% include figure.html img="allData.png" alt="quotes tag" caption="API Documentation for the website 'https://api.covid19api.com/'"  width="75%" %}
 
-{% include figure.html img="relativePaths.png" alt="quotes tag" caption="Examples of API requests" width="100%" %}
+{% include figure.html img="relativePaths.png" alt="quotes tag" caption="Example relative path to GET daily covid cases fof an individual country" width="100%" %}
 
 This is the relative path from the example above: /dayone/country/:country/status/:status/live
 This API request requires 2 id's, :country is the id for the target country and :status is the id for the target status.
@@ -138,7 +138,7 @@ We can get a list of countries by adding country to the base URL, i.e. https://a
 
 Use the find function click "crtl F" in the browser and a search bar will pop up, search Canada.
 
-{% include figure.html img="canada.png" alt="quotes tag" caption="Example relative path to GET daily covid cases fof an individual country" width="75%" %}
+{% include figure.html img="canada.png" alt="quotes tag" caption="Finding the country id for Canada" width="75%" %}
 
 Our API request.
 * **endpoint**: https://api.covid19api.com
