@@ -226,11 +226,11 @@ Lets look at another website that we can use to practice webscraping <a href='ht
     your activity here is to find and copy the code required
 <details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h4>update URL solution</h4></summary>   
     
-# Supply the URL that you would like to scrape
+Supply the URL that you would like to scrape
 quotes_url = 'https://bookstoscrape.com/' 
-# Pull (download) all html data from the URL supplied above
+Pull (download) all html data from the URL supplied above
 html_text = requests.get(books_url).text 
-#Parse the pull html data - make it look pretty
+Parse the pull html data - make it look pretty
 book_soup = BeautifulSoup(html_text, 'html.parser')'
     
 - notice how need to change more than just the URL we will cover this more thoroughly as we go. 
