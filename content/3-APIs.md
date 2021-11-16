@@ -81,7 +81,7 @@ First thing to do is test that your API request works, and that it GETs the coll
 
 {% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="NatureServe JSON data formatted in FireFox" width="75%" %}
 
-If you downloaded this data, it saved as a json file (most common type, but can be XML or HTML). The API documentation will tell you what the data will be. If you want to read json data into python you will need to follow the below code.</br>
+If you downloaded this data, it saved as a json file (most common type, but can be XML or HTML). The API documentation will tell you what the data will be. If you want to read json data into python you will need to follow the below code. </br>
 You can install the <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" target="_blank">json viewer extension </a> so that it is displayed nicely.
 
 ```python
