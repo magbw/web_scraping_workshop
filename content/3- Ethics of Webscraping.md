@@ -10,7 +10,7 @@ description: >
 
 Webscraping is using code, an API or web based application to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
 
-Prior to starting any project you will need to understand the potential ethical issues and apply for <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith ethics approval</a>.. 
+Prior to starting any project you will need to understand the potential ethical issues and apply for <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith ethics approval</a>.
 
 As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
 
@@ -27,15 +27,15 @@ eg; to find the permissions for a griffith university at /robots.txt to the addr
 
 more info on Robots can be<a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
 
-
-ACTIVITY
+<p style="border:3px; border-style:solid; border-color:#000000; padding: 1em;">
+<h2>Activity</h2>
 
 in this exercise we would like you to add the /robots.txt suffix to variety of you favourite web pages to see their scraping permissions.
 
 For example, look up gumtree.com.au/robots.txt and we can see that most elements are off limits, however if you search for british motorcycle magazine Visordown, you will find most applications are allowed www.visordown.com/robots.
 
 over the next few minutes check the permissions of a variety of pages you use and let us know what you find. 
-
+</p>
 
 ## Ethical consderations
 
