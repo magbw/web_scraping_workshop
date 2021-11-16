@@ -77,9 +77,11 @@ The API documentation provides an example API request for the relative path/id "
 Put it all together and paste it into your webbrowser to display the data.
 * **API request** https://explorer.natureserve.org/api/data/taxon/ELEMENT_GLOBAL.2.100661
 
-If you open the API request in firefox, it displays nicely, and there is a save button to download it.
+If you open the API request in firefox, it displays nicely, and there is a save button to download it. This will work for a one off, but difficult for multiple API requests.
 
 {% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="NatureServe JSON data formatted in FireFox" width="75%" %}
+
+Add python code to import saved json file.
 
 You can install the <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" target="_blank">json viewer extension </a> so that it is displayed nicely.
 
