@@ -208,18 +208,21 @@ print(inspirational_quotes)
 ```
 We have scrapped all the quotes with the tag 'inspirational'.
 
-<details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h2>Challenge</h2></summary>
+<details style="border:3px; border-style:solid; border-color:#000000; padding: 1em;"><summary><h2>Tag Scraping challenge</h2></summary>
 Change the tag to find different quotes
-
 changing only the tag, try some of the other possible tags to scrape. 
-
-    </details>
+</details>
 
  
 
 # Part II
 Lets look at another website that we can use to practice webscraping <a href='https://books.toscrape.com' target=_"blank"> books.toscrape.com <a/>
 
+    our first challenge is to see if we can change the URL in the code for the pages we will scrape. 
+    
+    solution - 
+    
+    
 
 ## Challenge
 Lets try to scrape all the prices of books. Inspect the price of a book and try to figure out what tag and attribute we can use to scrape it.
