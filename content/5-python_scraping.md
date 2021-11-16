@@ -233,7 +233,7 @@ book_soup = BeautifulSoup(html_text, 'html.parser')'
     
     notice how need to change more than just the URL
     we will cover this more thoroughly as we go. 
-    </detaials>
+    </details>
     
 
 ## Challenge
