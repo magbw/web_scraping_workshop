@@ -77,13 +77,24 @@ The API documentation provides an example API request for the relative path/id "
 Put it all together and paste it into your webbrowser to display the data.
 * **API request** https://explorer.natureserve.org/api/data/taxon/ELEMENT_GLOBAL.2.100661
 
-If you open the API request in firefox, it displays nicely, and there is a save button to download it. This will work for a one off, but difficult for multiple API requests.
+First thing to do is test that your API request works, and that it GETs the collect data. To do this, paste the API request into your firefox browser, it should display the data nicely. If you only want a couple of requests then you can save the data using the save button to download it.
 
 {% include figure.html img="SaveAPIfirefox.png" alt="JSON formatted in firefox" caption="NatureServe JSON data formatted in FireFox" width="75%" %}
 
-Add python code to import saved json file.
-
+If you downloaded this data, it saved as a json file (most common type, but can be XML or HTML). The API documentation will tell you what the data will be. If you want to read json data into python you will need to follow the below code.</br>
 You can install the <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" target="_blank">json viewer extension </a> so that it is displayed nicely.
+
+```python
+import json
+import os
+
+os.chdir('/Users/Downloads/')
+
+with open('american_black_bear.json') as dat:
+  data = json.load(dat)
+```
+
+If you have multiple API requests, or want to regularly collect the data, i.e. real-time updates, then you should use a programing language to GET the data.
 
 This is JSON formatted data, you can also GET data from most API's in XML and HTML format. You will most likely need to use a programming language to GET the data from the websites database onto your computer (or any other location you want to store/analyse the data).
 
