@@ -216,7 +216,7 @@ changing only the tag, try some of the other possible tags to scrape.
  
 
 # Part II
-Lets look at another website that we can use to practice webscraping <a href='https://books.toscrape.com' target=_"blank"> books.toscrape.com <a/>
+Lets look at another website that we can use to practice webscraping <a href='https://books.toscrape.com' target="_blank"> books.toscrape.com <a/>
 
     our first challenge is to see if we can change the URL in the code for the pages we will scrape. 
     
