@@ -16,7 +16,7 @@ You can only scrape the content that is loaded onto the page at the exact point 
 Static web content is built into the webpage, that is, its does not store any extra data on a remote server (think of a wikipedia page). </br>
 In contrast, dynamic content is stored on a remote server and when you interact with the page it sends or posts data from a remote server. Think of facebook, you can write comments in a post which and watch videos. Dynamic content is often hidden on a remote server and will not be visible to a webscraper without first interacting with the webpage so that the server posts it.
 
-{% include figure.html img="dynamic_content.png" alt="dynamic content marketplace" caption="Dynamic content occurs when the web browser asks the remote server for information that then gets sent back and rendered to the web browser" width="75%" %}
+{% include figure.html img="dynamic_content.png" alt="dynamic content marketplace" caption="Dynamic content occurs when the web browser asks the remote server for information that then gets sent back and rendered to the web browser" width="100%" %}
 
 How do I know what is loaded into the browser and what is still sitting in the remote server? <bold>Inspect the webpages structure</bold>
 
