@@ -28,7 +28,11 @@ eg; to find the permissions for a griffith university at /robots.txt to the addr
 more info on Robots can be<a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
 
 <h2>Activity</h2>
-<p class="p_border"> In this exercise we would like you to add the /robots.txt suffix to variety of you favourite web pages to see their scraping permissions. </br> For example, look up gumtree.com.au/robots.txt and we can see that most elements are off limits, however if you search for british motorcycle magazine Visordown, you will find most applications are allowed www.visordown.com/robots. </br> Over the next few minutes check the permissions of a variety of pages you use and let us know what you find. </p>
+<p class="p_border"> In this exercise we would like you to add the /robots.txt suffix to variety of you favourite web pages to see their scraping permissions.
+
+For example, look up gumtree.com.au/robots.txt and we can see that most elements are off limits, however if you search for british motorcycle magazine Visordown, you will find most applications are allowed www.visordown.com/robots.
+
+Over the next few minutes check the permissions of a variety of pages you use and let us know what you find. </p>
 
 ## Ethical consderations
 
