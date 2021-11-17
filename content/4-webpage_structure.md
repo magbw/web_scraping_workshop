@@ -6,17 +6,23 @@ description: >
     Introduction to webpage structure and how we use it to programatically scrape its contents.
 ---
 
-## Webpage structure 
-You should understand the basic structure of a webpage before scraping it for information. In this lesson we will work through some gerneral webpage structure.
+Have you ever though about how the web actually works? <br>
+It consists of 2 very important parts, your web browser (i.e. FireFox, Chrome, or if your game Edge) and remote servers (servers are essentially external hard drives, although they can fill up entire warehouses). <br>
+When you interact with the web you send and recieve requests between your web browser and a remote server. <br>
 
-Webpages are built using at least html, css and javascript/php/python. html formats the page, css makes it look pretty, and javascript/php/python/..... provides functionality.
-
-## Static vs Dynamic content
-You can only scrape the content that is loaded onto the page at the exact point in time when your code is executed. This is where static and dynamic web content play in. All content that you see on your web browser is stored on servers somewhere (servers are essentially external hard drive - although they can fill up entire warehouses)
-Static web content is built into the webpage, that is, its does not store any extra data on a remote server (think of a wikipedia page). </br>
-In contrast, dynamic content is stored on a remote server and when you interact with the page it sends or posts data from a remote server. Think of facebook, you can write comments in a post which and watch videos. Dynamic content is often hidden on a remote server and will not be visible to a webscraper without first interacting with the webpage so that the server posts it.
+For example, you open FireFox and type "www.facebook.com" into the web address. Your actually sending a request to the facebook server, the facebook server then looks you up in its database and sends content back to your web browser for it to display. Then you click on the marketplace icon, this sends a request back to the facebook server, which looks at all the personal information it has about you and looks at you previous marketplace search history so that it can create a list of all ads you may like, it then sends this content back to your web browser for it to display to you. <br>
+That's the internet....
 
 {% include figure.html img="dynamic_content.png" alt="dynamic content marketplace" caption="Dynamic content occurs when the web browser asks the remote server for information that then gets sent back and rendered to the web browser" width="100%" %}
+
+
+## Dynamic content
+You can only scrape the content that is loaded onto the page at the exact point in time when your code is executed. This is where static and dynamic web content play in. In the previous example, you cannot see any marketplace ads until Facebook's server has sent the ads to your browser and the browser has displayed them. This is a very good example of dymanic content. <br>
+There is more subtle dynamic content that you might think is loaded onto the page you are scraping, but in fact is not. <br>
+* Some more subtle examples are a users location on a web map, its constantly changing as the user moves.
+* The price of bitcoin on an exchange that provides real time updates.
+* Ads in the sidebar of a website, they are constantly changing.
+
 
 How do I know what is loaded into the browser and what is still sitting in the remote server? <bold>Inspect the webpages structure</bold>
 
