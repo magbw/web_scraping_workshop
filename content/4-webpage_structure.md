@@ -12,7 +12,7 @@ You should understand the basic structure of a webpage before scraping it for in
 Webpages are built using at least html, css and javascript/php/python. html formats the page, css makes it look pretty, and javascript/php/python/..... provides functionality.
 
 ## Static vs Dynamic content
-When webscraping, you can only scrape the content that is loaded onto the page at the point in time when your code is executed. 
+You can only scrape the content that is loaded onto the page at the exact point in time when your code is executed. This is where static and dynamic web content play in. All content that you see on your web browser is stored on servers somewhere
 Static web content is built into the webpage, that is, its does not store any extra data on a remote server (think of a wikipedia page). </br>
 In contrast, dynamic content is stored on a remote server and when you interact with the page it sends or posts data from a remote server. Think of facebook, you can write comments in a post which and watch videos. Dynamic content is often hidden on a remote server and will not be visible to a webscraper without first interacting with the webpage so that the server posts it.
 
