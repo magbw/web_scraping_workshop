@@ -56,8 +56,7 @@ They have a huge range of biodiversity data for the Americas. There are a few pi
 
 We will GET information about the American black bear Ursus americanus.
 
-All this information can usually be found in the websites API documentation
-https://explorer.natureserve.org/api-docs/
+All this information can be found in the websites <a href='https://explorer.natureserve.org/api-docs/' target='_blank'>API documentation</a>
 
 NatureServe API endpoint:
 * **endpoint** https://explorer.natureserve.org/
@@ -67,7 +66,7 @@ Relative path to get data for species data:
 note that {ouSeqUid} indicates the species of interest
 
 
-The id for a specific species: </br>
+The id for a specific species: <br>
 The API documentation provides an example API request for the relative path/id "/api/data/taxon/ELEMENT_GLOBAL.2.154701". From this we know that the API requires a species id that looks like "ELEMENT_GLOBAL.2.154701". Lets search for the American black bear on the NatureServe website and see if we can find an id.
 
 {% include figure.html img="natureServeId.png" alt="American black bear id" caption="NatureServe id for the American black bear" width="75%" %}
@@ -88,7 +87,7 @@ You can install the <a href="https://chrome.google.com/webstore/detail/json-view
 import json
 import os
 
-os.chdir('/Users/Downloads/')
+os.chdir('/Users/Downloads/') # You will need to change the directory to the one on your computer
 
 with open('american_black_bear.json') as dat:
   data = json.load(dat)
