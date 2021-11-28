@@ -8,9 +8,7 @@ description: >
 
 ## Getting started  
 
-Webscraping is using code, an API or web based application to scrape individual pages for data. This is different from web crawling where you are scraping the whole web for similar papges.
-
-Prior to starting any project you will need to understand the potential ethical issues and apply for <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith ethics approval</a>.
+Prior to starting any webscraping project you will need to understand the potential ethical issues and apply for <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith ethics approval</a>.
 
 As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
 
