@@ -15,15 +15,14 @@ As web pages have different levels of access and different tupes of information 
 
 ## Before scraping
 
-Find out if the data is freely publically available. 
-To find this out check the permissions as set by the page owners, find and read the terms and conditions, look for an API and use the Robots.
+Before you start web scraping try to find out if the webpage data is available to scrape. To find this information you need to check the permissions as set by the page owners as set out in the pages terms and conditions, you can also look for an API and to what elements of the page you can scrape you can use Robots.txt for page settings. 
 
-Robots
-'A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.' more practically, adding /robots.txt to a web address will tell you the page settings for web scraping. 
+### Terms and conditons
 
-eg; to find the permissions for a griffith university at /robots.txt to the address  griffith.edu.au/robots.txt this will tell you what data you can and cannot scrape.
+### API
 
-more info on Robots can be<a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
+### Robots
+'A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.' more practically, adding /robots.txt to a web address will tell you the page settings for web scraping.  eg; to find the permissions for a griffith university at /robots.txt to the address  griffith.edu.au/robots.txt this will tell you what data you can and cannot scrape. More information on how Robots.txt works can be <a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
 
 <h2>Activity</h2>
 <p class="p_border"> In this exercise we would like you to add the /robots.txt suffix to variety of you favourite web pages to see their scraping permissions. <br>
