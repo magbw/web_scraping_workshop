@@ -10,7 +10,7 @@ description: >
 
 Prior to starting any webscraping project you will need to understand the potential ethical issues and apply for <a href='https://www.griffith.edu.au/research/research-services/research-ethics-integrity' target="_blank">Griffith ethics approval</a>.
 
-As web pages have different levels of access and different tupes of information you do need to think about ethical concerns before you scrape for data.   the pages you wish to use should have their condiditions for scraping available for you to access. prior to scraping you need to think about the following aspects
+As web pages have different levels of access and different types of information available you will need to think about the ethics before you scrape for data.  Check for terms and conditions on the pages you wish to use, most webpages have their condiditions for scraping available for you to access. Prior to scraping you need to think about the following aspects
 
 
 ## Before scraping
@@ -19,7 +19,11 @@ Before you start web scraping try to find out if the webpage data is available t
 
 ### Terms and conditons
 
+Here a page will set out what you do with their data. Thsi will be expressed clearly. 
+
 ### API
+where pages are happy for you to access their data they will often provide an API. API is the acronym for Application Programming Interface, which allows two applications to talk to each other. When using API's you will generally need a programming interface;R, Python or another, to gather materials. 
+
 
 ### Robots
 'A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.' more practically, adding /robots.txt to a web address will tell you the page settings for web scraping.  eg; to find the permissions for a griffith university at /robots.txt to the address  griffith.edu.au/robots.txt this will tell you what data you can and cannot scrape. More information on how Robots.txt works can be <a href='https://developers.google.com/search/docs/advanced/robots/intro' target="_blank"> found here</a>.
