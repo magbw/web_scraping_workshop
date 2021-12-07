@@ -19,7 +19,7 @@ Before you start web scraping try to find out if the webpage data is available t
 
 ### Terms and conditons
 
-Here a page will set out what you do with their data. Thsi will be expressed clearly. 
+Here a page will set out what you do with their data. What you can and cannot do will be expressed clearly. 
 
 ### API
 where pages are happy for you to access their data they will often provide an API. API is the acronym for Application Programming Interface, which allows two applications to talk to each other. When using API's you will generally need a programming interface;R, Python or another, to gather materials. 
